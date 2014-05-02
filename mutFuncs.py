@@ -8,6 +8,7 @@ import csv
 import numpy
 import scipy
 import scipy.stats
+import itertools
 
 MIN_N = 5
 
@@ -47,7 +48,7 @@ class Patients:
 
     # Populates each patient record with their expression FunctionalData 
     def getFunctionalData(self):
-        for resultDir in glob.glob('rna-gene-expression/*'):
+        for resultDir in glob.glob('../rna-gene-expression/*'):
             studyId = os.path.basename(resultDir)
 
             metadataFile = os.path.join(resultDir, studyId + ".cgquery.xml")
@@ -70,7 +71,7 @@ class Patients:
             self.get(patientNumber).setFunctionalData(FunctionalData(countFile))
 
     def getMutationData(self):
-        with open('tcga-laml.csv', 'r') as mutationsCSV:
+        with open('../tcga-laml.csv', 'r') as mutationsCSV:
             mutations = csv.reader(mutationsCSV, delimiter=',')
             headerSkipped = False
 
@@ -145,16 +146,16 @@ def meanAndStdDev(d):
     return "%8.2f +/- %8.2f" % (numpy.mean(d), numpy.std(d))
 
 class Result:
-    def __init__(self, mutation, protein, significance, normalSet, mutatedSet):
-        self.mutation = mutation
+    def __init__(self, mutationList, protein, significance, normalSet, mutatedSet):
+        self.mutationList = mutationList
         self.protein = protein
         self.significance = significance
         self.normalSet = normalSet
         self.mutatedSet = mutatedSet
 
     def __repr__(self):
-        return "%8s: %15s %s  -->  %s, n=%d, p=%f" % (
-            self.mutation,
+        return "%15s: %15s %s  -->  %s, n=%d, p=%f" % (
+            "+".join(self.mutationList),
             self.protein,
             meanAndStdDev(self.normalSet),
             meanAndStdDev(self.mutatedSet),
@@ -172,7 +173,7 @@ def getFunctionalData(patientList, protein):
 
     return functionalDataList
 
-def classifyByMutation(patients, proteinSet, mutation):
+def classifyByMutation(patients, proteinSet, mutationList):
     retval = []
 
     # Split the patients by whether or not they've got this mutation
@@ -180,7 +181,14 @@ def classifyByMutation(patients, proteinSet, mutation):
     mutatedPatients = []
 
     for patient in patients.valid():
-        if patient.getMutations().has(mutation):
+        hasAllMutations = True
+
+        for mutation in mutationList:
+            if not patient.getMutations().has(mutation):
+                hasAllMutations = False
+                break
+
+        if hasAllMutations:
             mutatedPatients.append(patient)
         else:
             normalPatients.append(patient)
@@ -205,7 +213,7 @@ def classifyByMutation(patients, proteinSet, mutation):
         except:
             continue
 
-        retval.append(Result(mutation, protein, p, normalFunctions, mutatedFunctions))
+        retval.append(Result(mutationList, protein, p, normalFunctions, mutatedFunctions))
 
     return retval
 
@@ -242,17 +250,19 @@ def classifyMutationSignificance(patients, functionalProteinSet, mutationSet):
     # Test each mutation for significance
     results = []
     i = 0
-    for mutation in mutationSet:
-        i += 1
-        retval = classifyByMutation(patients, functionalProteinSet, mutation)
 
-        if len(retval) > 0:
-            sys.stderr.write("%3d/%3d [%-10s] %d candidate proteins\n" % (
-                i, len(mutationSet),
-                mutation,
-                len(retval),
-            ))
-            results.extend(retval)
+    for setSize in [1, 2]:
+        for mutationList in itertools.combinations(mutationSet, setSize):
+            i += 1
+            retval = classifyByMutation(patients, functionalProteinSet, mutationList)
+
+            if len(retval) > 0:
+                sys.stderr.write("%3d/%3d [%-10s] %d candidate proteins\n" % (
+                    i, len(mutationSet),
+                    "+".join(mutationList),
+                    len(retval),
+                ))
+                results.extend(retval)
 
     # Apply bonferonni correction
     correctionFactor = len(results)
