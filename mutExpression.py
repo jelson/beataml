@@ -9,6 +9,7 @@ import numpy
 import scipy
 import scipy.stats
 import itertools
+import collections
 
 MIN_N = 5
 
@@ -153,9 +154,12 @@ class Result:
         self.normalSet = normalSet
         self.mutatedSet = mutatedSet
 
+    def getMutationList(self):
+        return "+".join(self.mutationList)
+
     def __repr__(self):
         return "%15s: %15s %s  -->  %s, n=%d, p=%f" % (
-            "+".join(self.mutationList),
+            self.getMutationList(),
             self.protein,
             meanAndStdDev(self.normalSet),
             meanAndStdDev(self.mutatedSet),
@@ -219,20 +223,30 @@ def classifyByMutation(patients, proteinSet, mutationList):
 
 # Generate statistics about number of patients who share mutations
 def printMutationStatistics(patients, mutationSet):
-    patientsPerMutation = {}
-    for mutation in mutationSet:
-        patientsPerMutation[mutation] = len([1 for p in patients.valid() if p.getMutations().has(mutation)])
-    patientsPerMutationSorted = sorted(patientsPerMutation.items(), key=lambda item: -item[1])
+    patientsPerMutation = collections.Counter()
+    for patient in patients.valid():
+        patientsPerMutation.update(patient.getMutations().all())
+                
+    # Sort first by number of mutations (descending), then by mutation name.
+    # We do this by constructing a string as the key that contains the (negated) number of mutations
+    # followed by the mutation name, to break ties.
+    patientsPerMutationSorted = sorted(patientsPerMutation.items(),
+                                       key=lambda item: "%05d%s" % (len(patients.valid()) - item[1], item[0]))
 
     totalP = len(patients.valid())
     cumulativeSet = set()
 
-    sys.stdout.write("\nMutation prevalance\n")
+    sys.stdout.write("\nMutation prevalence\n")
+    cutoffReached = False
 
     for mutationStat in patientsPerMutationSorted:
         if mutationStat[1] <= 1:
             break
 
+        if not cutoffReached and mutationStat[1] < MIN_N:
+            sys.stdout.write("---cutoff--- (mutations below are not considered)\n")
+            cutoffReached = True
+            
         for patient in patients.valid():
             if patient.getMutations().has(mutationStat[0]):
                 cumulativeSet.add(patient)
@@ -271,12 +285,19 @@ def classifyMutationSignificance(patients, functionalProteinSet, mutationSet):
 
     # Sort 
     results.sort(key=lambda result: result.significance)
+    correlationCounter = collections.Counter()
 
     for result in results:
         if result.significance > 0.01:
             break;
 
         sys.stdout.write("%s\n" % (result))
+        correlationCounter[result.getMutationList()] += 1
+
+    sys.stdout.write("\nSignificant effects:\n")
+
+    for mut, count in correlationCounter.most_common():
+        sys.stdout.write("%20s %d\n" % (mut, count))
 
 
 def main():
