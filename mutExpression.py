@@ -286,7 +286,7 @@ def classifyByMutation(patients, proteinSet, mutationList):
         say("  %s: mutated in only %d patients\n" % (mutationList, len(mutatedPatients)))
         return []
 
-    sys.stderr.write("Testing %s...\n" % (mutationList))
+    sys.stderr.write("Testing %s...\n" % ("+".join(mutationList)))
 
     # Find significance of this split for each protein's expression data
     for protein in proteinSet:
