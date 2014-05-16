@@ -425,7 +425,6 @@ def main():
         len(mutationSet), len(expressionProteinSet)))
 
     commonMutations = getCommonMutationsAndPrintMutationStatistics(patients, mutationSet)
-    commonMutations = commonMutations[-1:]
 
     sys.stderr.write("Common mutations: %s\n" % (commonMutations))
 
