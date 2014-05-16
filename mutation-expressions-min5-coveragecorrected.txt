@@ -1,0 +1,273 @@
+Relative coverages per patient:
+ [1] 0.7443356 1.1040697 1.1484507 1.0060572 0.9214596 0.8990618 0.9213118
+ [8] 0.7455550 1.2910796 1.3619251 0.5943651 1.2391590 1.0257965 0.9935506
+[15] 1.4170457 0.9937895 0.7886688 0.8841940 1.4227322 1.2083469 0.8896803
+[22] 1.1432327 1.0056113 0.9163015 0.7755667 0.8322410 0.7288009 1.4541258
+[29] 0.7755010 0.6487715 1.1283888 1.3918003 1.0012601 1.2058998 0.8345956
+[36] 1.1884097 1.3783811 0.9387281 0.7861182 1.0960452 1.2254111 1.1946761
+[43] 0.8302240 1.1361520 1.1494804 0.6244683 1.2475016 0.8990292 1.2360554
+[50] 0.8340672 1.0139634 0.6587240 0.7716232 0.9404561 1.0792184 0.7778799
+[57] 0.9264620 1.0056373 1.2838919 0.8791458 0.9863449 1.1409524 1.7438583
+[64] 0.8904208 0.7550485 1.1206974 1.5992971 0.8591182 0.8734235 0.8761468
+[71] 0.9855089 1.1084433 0.6330999 1.0564937 0.8850491 1.0976095 1.0189117
+[78] 0.9721054 1.3522403 0.8799955 1.1090882 0.8242995 1.2685383 1.0680548
+[85] 1.2971434 1.2940527 0.7239472 0.9809833 1.2331375 0.8457552 1.2501662
+
+Got expression data for 91, mutations for 197, both for 91
+Valid patients: 778 mutations, expression data for 50355 proteins
+
+Mutation prevalence
+FLT3       26 patients, cumulative 26/91 (28.57%)
+DNMT3A     23 patients, cumulative 42/91 (46.15%)
+NPM1       23 patients, cumulative 46/91 (50.55%)
+IDH1       11 patients, cumulative 49/91 (53.85%)
+IDH2       10 patients, cumulative 53/91 (58.24%)
+RUNX1      10 patients, cumulative 57/91 (62.64%)
+TET2       10 patients, cumulative 61/91 (67.03%)
+CEBPA       6 patients, cumulative 64/91 (70.33%)
+WT1         6 patients, cumulative 65/91 (71.43%)
+NRAS        5 patients, cumulative 65/91 (71.43%)
+TP53        5 patients, cumulative 68/91 (74.73%)
+TTN         5 patients, cumulative 69/91 (75.82%)
+---cutoff--- (mutations below are not considered)
+KIT         4 patients, cumulative 71/91 (78.02%)
+KRAS        4 patients, cumulative 73/91 (80.22%)
+PTPN11      4 patients, cumulative 74/91 (81.32%)
+RAD21       4 patients, cumulative 75/91 (82.42%)
+SMC3        4 patients, cumulative 76/91 (83.52%)
+U2AF1       4 patients, cumulative 77/91 (84.62%)
+COL12A1     3 patients, cumulative 77/91 (84.62%)
+GRIK2       3 patients, cumulative 78/91 (85.71%)
+PHF6        3 patients, cumulative 78/91 (85.71%)
+STAG2       3 patients, cumulative 78/91 (85.71%)
+APOB        2 patients, cumulative 78/91 (85.71%)
+ARAP2       2 patients, cumulative 78/91 (85.71%)
+ASXL1       2 patients, cumulative 78/91 (85.71%)
+ATP10B      2 patients, cumulative 78/91 (85.71%)
+C17orf97    2 patients, cumulative 79/91 (86.81%)
+CACNA1E     2 patients, cumulative 80/91 (87.91%)
+CACNA2D3    2 patients, cumulative 80/91 (87.91%)
+CALR        2 patients, cumulative 81/91 (89.01%)
+CNTNAP4     2 patients, cumulative 81/91 (89.01%)
+CSMD1       2 patients, cumulative 81/91 (89.01%)
+DDX41       2 patients, cumulative 82/91 (90.11%)
+E2F8        2 patients, cumulative 82/91 (90.11%)
+ETV6        2 patients, cumulative 83/91 (91.21%)
+FAM5C       2 patients, cumulative 83/91 (91.21%)
+GATA2       2 patients, cumulative 83/91 (91.21%)
+GBP4        2 patients, cumulative 83/91 (91.21%)
+GJB3        2 patients, cumulative 83/91 (91.21%)
+GPR112      2 patients, cumulative 84/91 (92.31%)
+GRM3        2 patients, cumulative 84/91 (92.31%)
+HECW1       2 patients, cumulative 84/91 (92.31%)
+ILDR1       2 patients, cumulative 84/91 (92.31%)
+KCNA4       2 patients, cumulative 85/91 (93.41%)
+KDM3B       2 patients, cumulative 85/91 (93.41%)
+LOC728843   2 patients, cumulative 85/91 (93.41%)
+MT-CO2      2 patients, cumulative 85/91 (93.41%)
+MT-CO3      2 patients, cumulative 85/91 (93.41%)
+MT-CYB      2 patients, cumulative 85/91 (93.41%)
+MT-ND5      2 patients, cumulative 85/91 (93.41%)
+MUC16       2 patients, cumulative 85/91 (93.41%)
+NMUR2       2 patients, cumulative 85/91 (93.41%)
+PHIP        2 patients, cumulative 85/91 (93.41%)
+PKD1L2      2 patients, cumulative 85/91 (93.41%)
+PLCE1       2 patients, cumulative 85/91 (93.41%)
+RNF213      2 patients, cumulative 85/91 (93.41%)
+SEMA3A      2 patients, cumulative 85/91 (93.41%)
+SEMA4A      2 patients, cumulative 85/91 (93.41%)
+SETBP1      2 patients, cumulative 85/91 (93.41%)
+SMC1A       2 patients, cumulative 85/91 (93.41%)
+SPEN        2 patients, cumulative 85/91 (93.41%)
+STRN        2 patients, cumulative 85/91 (93.41%)
+TCEAL6      2 patients, cumulative 85/91 (93.41%)
+THRAP3      2 patients, cumulative 85/91 (93.41%)
+TOP3B       2 patients, cumulative 85/91 (93.41%)
+ZBTB33      2 patients, cumulative 85/91 (93.41%)
+  ('TTN', 'WT1'): mutated in only 0 patients
+  ('TTN', 'FLT3'): mutated in only 2 patients
+  ('TTN', 'TET2'): mutated in only 0 patients
+  ('TTN', 'CEBPA'): mutated in only 0 patients
+  ('TTN', 'IDH2'): mutated in only 0 patients
+  ('TTN', 'IDH1'): mutated in only 1 patients
+  ('TTN', 'RUNX1'): mutated in only 1 patients
+  ('TTN', 'TP53'): mutated in only 0 patients
+  ('TTN', 'NRAS'): mutated in only 0 patients
+  ('TTN', 'DNMT3A'): mutated in only 2 patients
+  ('TTN', 'NPM1'): mutated in only 2 patients
+  ('WT1', 'FLT3'): mutated in only 4 patients
+  ('WT1', 'TET2'): mutated in only 0 patients
+  ('WT1', 'CEBPA'): mutated in only 0 patients
+  ('WT1', 'IDH2'): mutated in only 0 patients
+  ('WT1', 'IDH1'): mutated in only 1 patients
+  ('WT1', 'RUNX1'): mutated in only 1 patients
+  ('WT1', 'TP53'): mutated in only 0 patients
+  ('WT1', 'NRAS'): mutated in only 0 patients
+  ('WT1', 'DNMT3A'): mutated in only 1 patients
+  ('WT1', 'NPM1'): mutated in only 3 patients
+  ('FLT3', 'TET2'): mutated in only 4 patients
+  ('FLT3', 'CEBPA'): mutated in only 1 patients
+  ('FLT3', 'IDH2'): mutated in only 1 patients
+  ('FLT3', 'IDH1'): mutated in only 2 patients
+  ('FLT3', 'RUNX1'): mutated in only 1 patients
+  ('FLT3', 'TP53'): mutated in only 0 patients
+  ('FLT3', 'NRAS'): mutated in only 1 patients
+  ('TET2', 'CEBPA'): mutated in only 0 patients
+  ('TET2', 'IDH2'): mutated in only 0 patients
+  ('TET2', 'IDH1'): mutated in only 1 patients
+  ('TET2', 'RUNX1'): mutated in only 0 patients
+  ('TET2', 'TP53'): mutated in only 1 patients
+  ('TET2', 'NRAS'): mutated in only 0 patients
+  ('TET2', 'DNMT3A'): mutated in only 4 patients
+  ('TET2', 'NPM1'): mutated in only 2 patients
+  ('CEBPA', 'IDH2'): mutated in only 0 patients
+  ('CEBPA', 'IDH1'): mutated in only 1 patients
+  ('CEBPA', 'RUNX1'): mutated in only 0 patients
+  ('CEBPA', 'TP53'): mutated in only 1 patients
+  ('CEBPA', 'NRAS'): mutated in only 2 patients
+  ('CEBPA', 'DNMT3A'): mutated in only 2 patients
+  ('CEBPA', 'NPM1'): mutated in only 1 patients
+  ('IDH2', 'IDH1'): mutated in only 1 patients
+  ('IDH2', 'RUNX1'): mutated in only 3 patients
+  ('IDH2', 'TP53'): mutated in only 0 patients
+  ('IDH2', 'NRAS'): mutated in only 0 patients
+  ('IDH2', 'DNMT3A'): mutated in only 3 patients
+  ('IDH2', 'NPM1'): mutated in only 2 patients
+  ('IDH1', 'RUNX1'): mutated in only 2 patients
+  ('IDH1', 'TP53'): mutated in only 0 patients
+  ('IDH1', 'NRAS'): mutated in only 1 patients
+  ('IDH1', 'NPM1'): mutated in only 4 patients
+  ('RUNX1', 'TP53'): mutated in only 0 patients
+  ('RUNX1', 'NRAS'): mutated in only 0 patients
+  ('RUNX1', 'DNMT3A'): mutated in only 2 patients
+  ('RUNX1', 'NPM1'): mutated in only 0 patients
+  ('TP53', 'NRAS'): mutated in only 1 patients
+  ('TP53', 'DNMT3A'): mutated in only 1 patients
+  ('TP53', 'NPM1'): mutated in only 0 patients
+  ('NRAS', 'DNMT3A'): mutated in only 2 patients
+  ('NRAS', 'NPM1'): mutated in only 1 patients
+           TP53:     RP11-88H9.2     0.00 +/-     0.00  -->      0.95 +/-     0.88, n= 5, p=0.000000
+           NPM1:        HOXB-AS3     0.64 +/-     1.34  -->      6.69 +/-     4.70, n=23, p=0.000001
+           NPM1:           HOXB3  1404.48 +/-  1816.11  -->   8474.38 +/-  2509.29, n=23, p=0.000001
+           NPM1:            PBX3   846.29 +/-   893.87  -->   3699.64 +/-   877.72, n=23, p=0.000002
+           TP53:        DCAF12L2     0.05 +/-     0.30  -->      8.99 +/-    11.51, n= 5, p=0.000003
+           NPM1:           HOXA3   160.04 +/-   201.97  -->    907.41 +/-   269.19, n=23, p=0.000003
+           NPM1:        HOXA-AS3   534.91 +/-   709.86  -->   3017.39 +/-  1026.44, n=23, p=0.000004
+           NPM1:          HOXA13     1.19 +/-     4.25  -->    100.71 +/-   285.81, n=23, p=0.000006
+           NPM1:             TRH  2288.63 +/-  7923.09  -->      3.95 +/-     8.67, n=23, p=0.000009
+           NPM1:        HOXA-AS2   155.22 +/-   196.08  -->    795.03 +/-   257.97, n=23, p=0.000010
+           NPM1:           HOXA5    44.05 +/-    61.27  -->    219.19 +/-    70.09, n=23, p=0.000013
+           NPM1:      AC103702.1     6.29 +/-    14.63  -->     42.43 +/-    19.47, n=23, p=0.000014
+           NPM1:   RP11-123K19.1     0.20 +/-     1.40  -->      2.72 +/-     3.94, n=23, p=0.000026
+           NPM1:          HOXA10   225.40 +/-   224.90  -->    807.35 +/-   281.79, n=23, p=0.000029
+           NPM1:        HOXA-AS4   264.61 +/-   275.71  -->    990.48 +/-   356.66, n=23, p=0.000029
+           NPM1:           WNT7B     4.47 +/-    15.28  -->    147.61 +/-   130.80, n=23, p=0.000030
+           NPM1:          SH3RF1   673.41 +/-   373.54  -->    285.27 +/-    87.08, n=23, p=0.000031
+           NPM1:            SDSL    99.62 +/-    71.36  -->    258.96 +/-    77.65, n=23, p=0.000033
+           NPM1:           HOXB2   172.08 +/-   188.05  -->    573.77 +/-   195.82, n=23, p=0.000033
+           NPM1:        HOXB-AS1   213.20 +/-   238.20  -->    829.11 +/-   299.41, n=23, p=0.000040
+           NPM1:           HOXA4    86.42 +/-   116.26  -->    417.74 +/-   153.59, n=23, p=0.000047
+           NPM1:           HOXA6    60.62 +/-    88.18  -->    341.69 +/-   155.80, n=23, p=0.000053
+           NPM1:           HOXA7   103.75 +/-   129.19  -->    480.91 +/-   229.08, n=23, p=0.000077
+           NPM1:         FAM105A   980.13 +/-   908.41  -->    120.32 +/-   160.27, n=23, p=0.000081
+           NPM1:   RP11-1055B8.6   128.06 +/-   144.30  -->    526.29 +/-   177.77, n=23, p=0.000084
+           NPM1:       HOXA11-AS    11.04 +/-    39.53  -->     99.02 +/-   124.88, n=23, p=0.000102
+           NPM1:           HOXB7    14.49 +/-    79.87  -->     49.74 +/-    47.83, n=23, p=0.000108
+           NPM1:         SLC10A2     0.29 +/-     1.18  -->    158.05 +/-   501.25, n=23, p=0.000131
+           NPM1:  RP11-357H14.19   133.84 +/-   746.68  -->    579.07 +/-  1280.54, n=23, p=0.000145
+           NPM1:   RP11-398F12.1   127.92 +/-   159.59  -->    488.62 +/-   202.00, n=23, p=0.000154
+           NPM1:            GYPC  2717.70 +/-  1998.82  -->    649.39 +/-   379.21, n=23, p=0.000172
+           NPM1:   RP1-170O19.20    49.36 +/-    55.91  -->    197.79 +/-    97.07, n=23, p=0.000175
+           TP53:          BPIFB3     0.02 +/-     0.20  -->      0.95 +/-     0.88, n= 5, p=0.000179
+           TP53:     RP11-1A16.1     0.35 +/-     3.25  -->     23.54 +/-    36.57, n= 5, p=0.000179
+           TP53:   RP11-744J10.3     0.01 +/-     0.12  -->      2.43 +/-     4.07, n= 5, p=0.000179
+           NPM1:           HOXA9   865.83 +/-   962.06  -->   3314.66 +/-  1219.17, n=23, p=0.000193
+           NPM1:          HOXA11    14.74 +/-    59.06  -->    165.37 +/-   256.44, n=23, p=0.000225
+           NPM1:           C1QL1     0.80 +/-     1.33  -->     19.97 +/-    32.94, n=23, p=0.000239
+           NPM1:          TMIGD2   244.27 +/-   247.88  -->     21.83 +/-    26.14, n=23, p=0.000243
+           TP53:    RP11-310H4.1     0.01 +/-     0.14  -->      0.50 +/-     0.41, n= 5, p=0.000244
+           NPM1:          NKX2-3    83.23 +/-   202.05  -->    392.85 +/-   182.38, n=23, p=0.000256
+           NPM1:   RP1-170O19.14     5.17 +/-    17.66  -->     42.86 +/-    56.58, n=23, p=0.000272
+           NPM1:         SLC35B4   932.93 +/-   246.87  -->   1497.00 +/-   311.64, n=23, p=0.000273
+           NPM1:           MEIS1  1063.88 +/-  1120.77  -->   3601.58 +/-  1322.30, n=23, p=0.000323
+           NPM1:           SPARC  3859.97 +/-  3542.96  -->    445.27 +/-   447.20, n=23, p=0.000323
+    IDH1+DNMT3A:          CRYBA2     0.00 +/-     0.00  -->      0.43 +/-     0.54, n= 7, p=0.000358
+           NPM1:            GNG7   820.18 +/-   506.44  -->    233.74 +/-   118.98, n=23, p=0.000362
+           NPM1:           HOXB8    27.91 +/-   162.27  -->     60.08 +/-   123.50, n=23, p=0.000380
+           NPM1:         ONECUT3     1.22 +/-     2.31  -->     36.63 +/-    46.60, n=23, p=0.000426
+           NPM1:          MAN1A1  6327.75 +/-  6096.55  -->   1455.16 +/-   541.01, n=23, p=0.000508
+           NPM1:            NCR2     2.88 +/-    21.27  -->     67.64 +/-   214.67, n=23, p=0.000521
+           NPM1:        C22orf26    50.61 +/-    41.98  -->    138.32 +/-    48.21, n=23, p=0.000568
+           NPM1:    RP11-318M2.2   985.35 +/-  1320.62  -->     25.50 +/-    26.44, n=23, p=0.000635
+           NPM1:          SKIDA1    86.42 +/-   204.16  -->    595.42 +/-   353.05, n=23, p=0.000635
+           NPM1:    RP11-318M2.3   941.03 +/-  1305.20  -->     17.98 +/-    21.00, n=23, p=0.000794
+           NPM1:          TMEM65   455.58 +/-   258.55  -->   1094.19 +/-   682.28, n=23, p=0.000839
+           NPM1:    hsa-mir-4763   267.39 +/-   244.05  -->    922.59 +/-   507.12, n=23, p=0.000839
+           FLT3:          S100A1    27.84 +/-    46.69  -->     80.82 +/-    73.85, n=26, p=0.001013
+            TTN:         GLYATL3     0.00 +/-     0.00  -->      0.42 +/-     0.52, n= 5, p=0.001073
+            TTN:   RP11-834C11.8     0.00 +/-     0.00  -->      0.38 +/-     0.47, n= 5, p=0.001073
+           TP53:   RP11-170M17.1     0.00 +/-     0.00  -->      0.88 +/-     1.36, n= 5, p=0.001073
+           TP53:     ATP13A5-AS1     0.00 +/-     0.00  -->      0.58 +/-     0.71, n= 5, p=0.001073
+           TP53:    RP11-719K4.2     0.00 +/-     0.00  -->      0.50 +/-     0.65, n= 5, p=0.001073
+           TP53:         MED14P1     0.00 +/-     0.00  -->      0.46 +/-     0.59, n= 5, p=0.001073
+           TP53:            NXF4     0.00 +/-     0.00  -->      0.54 +/-     0.72, n= 5, p=0.001073
+           TP53:          MAGEC2     0.00 +/-     0.00  -->      2.35 +/-     3.74, n= 5, p=0.001073
+           TP53:   RP11-160A10.3     0.00 +/-     0.00  -->      0.46 +/-     0.58, n= 5, p=0.001073
+           TP53:    RP11-416N4.4     0.00 +/-     0.00  -->      0.34 +/-     0.42, n= 5, p=0.001073
+           TP53:   RP11-771D21.2     0.00 +/-     0.00  -->      0.54 +/-     0.72, n= 5, p=0.001073
+           TP53:   RP11-408B11.2     0.00 +/-     0.00  -->      2.57 +/-     4.70, n= 5, p=0.001073
+           TP53:    RP11-672A2.2     0.00 +/-     0.00  -->      0.34 +/-     0.42, n= 5, p=0.001073
+           TP53:     RP11-59J5.1     0.00 +/-     0.00  -->      0.67 +/-     0.83, n= 5, p=0.001073
+           TP53:   CTD-3051D23.3     0.00 +/-     0.00  -->      0.92 +/-     1.17, n= 5, p=0.001073
+           TP53:          GABRA5     0.00 +/-     0.00  -->      2.08 +/-     3.79, n= 5, p=0.001073
+           TP53:         TGIF2LX     0.00 +/-     0.00  -->      0.46 +/-     0.58, n= 5, p=0.001073
+           TP53:          MAGEA6     0.00 +/-     0.00  -->      1.62 +/-     2.45, n= 5, p=0.001073
+           TP53:           TBX22     0.00 +/-     0.00  -->      0.74 +/-     1.09, n= 5, p=0.001073
+           TP53:           SYT16     0.00 +/-     0.00  -->      0.32 +/-     0.40, n= 5, p=0.001073
+           TP53:      AC061961.2     0.00 +/-     0.00  -->      0.29 +/-     0.35, n= 5, p=0.001073
+           NRAS:   RP11-162K11.4     0.00 +/-     0.00  -->      0.44 +/-     0.57, n= 5, p=0.001073
+          RUNX1:          SPANXD     0.01 +/-     0.09  -->      0.75 +/-     0.92, n=10, p=0.001125
+           NPM1:        IPO9-AS1  1535.34 +/-  1119.67  -->    268.26 +/-   224.79, n=23, p=0.001168
+           NPM1:        PPARGC1A    97.43 +/-   340.51  -->    458.76 +/-   370.13, n=23, p=0.001197
+    DNMT3A+NPM1:        CDRT15L2     0.01 +/-     0.13  -->      0.72 +/-     0.87, n=10, p=0.001602
+           NPM1:         C2orf65   142.03 +/-   102.49  -->     36.48 +/-    23.05, n=23, p=0.001621
+           NPM1:    RP11-37N22.1     4.26 +/-     5.20  -->     22.64 +/-    23.77, n=23, p=0.001674
+           TP53:       IGKV1D-39     0.06 +/-     0.33  -->      1.18 +/-     0.71, n= 5, p=0.001964
+           NPM1:            CD34 11209.86 +/- 12941.31  -->    373.60 +/-   689.65, n=23, p=0.002126
+           NPM1:           HOXA2    41.18 +/-    53.93  -->    136.60 +/-    70.41, n=23, p=0.002244
+           NPM1:           BAALC   829.37 +/-  1179.22  -->     15.88 +/-    16.34, n=23, p=0.002637
+      FLT3+NPM1:         ONECUT3     4.32 +/-    21.20  -->     39.80 +/-    38.23, n=15, p=0.003169
+           NPM1:      AC004383.4    44.45 +/-    53.77  -->      0.45 +/-     0.75, n=23, p=0.003407
+           NPM1:           MLLT3   615.76 +/-   700.38  -->     95.22 +/-   111.27, n=23, p=0.003445
+           NPM1:       UGGT2-IT1     0.44 +/-     1.52  -->      2.77 +/-     2.89, n=23, p=0.003467
+           NPM1:   RP11-1055B8.4    84.91 +/-   130.44  -->    461.52 +/-   524.27, n=23, p=0.003617
+      FLT3+NPM1:         SLC35B4   963.00 +/-   253.99  -->   1645.49 +/-   271.86, n=15, p=0.003726
+           NPM1:           LMX1B    11.09 +/-    45.53  -->    108.47 +/-   165.38, n=23, p=0.003822
+           NPM1:            NAV1   429.49 +/-   296.08  -->     75.78 +/-    66.91, n=23, p=0.003832
+           NPM1:           PDGFD   124.12 +/-   177.42  -->    432.55 +/-   205.18, n=23, p=0.004261
+           FLT3:     RP4-781K5.8    10.21 +/-    10.14  -->     35.00 +/-    22.52, n=26, p=0.004802
+           NPM1:          TSPAN7   275.52 +/-   348.92  -->      7.17 +/-    10.48, n=23, p=0.004990
+           NPM1:         C1orf21   872.86 +/-   612.48  -->    182.40 +/-   253.47, n=23, p=0.004993
+           NPM1:         C8orf56    55.70 +/-    80.44  -->      0.76 +/-     1.10, n=23, p=0.005309
+           NPM1:             APP  4478.89 +/-  3389.80  -->    508.34 +/-   758.35, n=23, p=0.005547
+           TP53:    RP11-526P5.1     0.02 +/-     0.16  -->      1.99 +/-     1.86, n= 5, p=0.005723
+      FLT3+NPM1:   RP11-473L15.2     2.26 +/-    12.68  -->     28.08 +/-    31.11, n=15, p=0.007238
+      FLT3+NPM1:        HOXA-AS3   750.41 +/-  1001.55  -->   3249.54 +/-   813.88, n=15, p=0.007798
+           NPM1:           ITM2C  5272.19 +/-  3979.37  -->   1326.94 +/-   961.51, n=23, p=0.007997
+           NPM1:           CDCA7  2628.74 +/-  1321.91  -->    833.94 +/-   639.14, n=23, p=0.008423
+      FLT3+NPM1:          SKIDA1   118.01 +/-   248.71  -->    706.85 +/-   271.92, n=15, p=0.008811
+           NPM1:           ITGB4   162.64 +/-   317.42  -->     20.22 +/-    15.82, n=23, p=0.008871
+           NPM1:           SMAGP    28.93 +/-    27.42  -->      4.95 +/-     4.54, n=23, p=0.009343
+           NPM1:           PXDC1    44.22 +/-    53.22  -->      6.96 +/-    11.32, n=23, p=0.009586
+      FLT3+NPM1:           HOXB3  2089.47 +/-  2849.84  -->   8774.34 +/-  1845.69, n=15, p=0.009946
+
+Significant effects:
+                NPM1 73
+                TP53 27
+           FLT3+NPM1 6
+                 TTN 2
+                FLT3 2
+               RUNX1 1
+                NRAS 1
+         IDH1+DNMT3A 1
+         DNMT3A+NPM1 1
