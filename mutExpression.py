@@ -14,6 +14,11 @@ import rpy2.robjects as robjects
 
 MIN_N = 5
 
+global outFile
+def say(s):
+    outFile.write(s)
+    sys.stderr.write(s)
+
 def patientIdFromSampleId(sampleId):
     return int(sampleId.split("-")[2])
 
@@ -29,7 +34,7 @@ class Patients:
         has_muts = len([p for p in self.all() if p.getMutations().hasData()])
         has_both = len(self.valid())
 
-        sys.stdout.write("Got expression data for %d, mutations for %d, both for %d\n" % (
+        say("Got expression data for %d, mutations for %d, both for %d\n" % (
             has_expressions, has_muts, has_both))
 
     def get(self, patientId):
@@ -111,7 +116,7 @@ class Patients:
         scaleVector = robjects.r('scaleVector = PS.Est.Depth(eMat)')
 
         s = "Relative coverages per patient:\n%s\n" % (scaleVector)
-        sys.stdout.write(s)
+        say(s)
         sys.stderr.write(s)
 
         i = 0
@@ -219,8 +224,19 @@ class Result:
     def getMutationList(self):
         return "+".join(self.mutationList)
 
+    def csv(self):
+        return "%s,%s,%f,%f,%f,%f,%d,%f" % (
+            self.getMutationList(),
+            self.protein,
+            numpy.mean(self.normalSet),
+            numpy.std(self.normalSet),
+            numpy.mean(self.mutatedSet),
+            numpy.std(self.mutatedSet),
+            len(self.mutatedSet),
+            self.significance)
+            
     def __repr__(self):
-        return "%15s: %15s %s  -->  %s, n=%d, p=%f" % (
+        return "%15s: %15s %s  -->  %s, n=%2d, p=%f" % (
             self.getMutationList(),
             self.protein,
             meanAndStdDev(self.normalSet),
@@ -267,7 +283,7 @@ def classifyByMutation(patients, proteinSet, mutationList):
 
     # Ignore very small sample sizes
     if len(normalPatients) < MIN_N or len(mutatedPatients) < MIN_N:
-        sys.stdout.write("  %s: mutated in only %d patients\n" % (mutationList, len(mutatedPatients)))
+        say("  %s: mutated in only %d patients\n" % (mutationList, len(mutatedPatients)))
         return []
 
     sys.stderr.write("Testing %s...\n" % (mutationList))
@@ -316,7 +332,7 @@ def getCommonMutationsAndPrintMutationStatistics(patients, mutationSet):
     totalP = len(patients.valid())
     cumulativeSet = set()
 
-    sys.stdout.write("\nMutation prevalence\n")
+    say("\nMutation prevalence\n")
     cutoffReached = False
 
     for mutationStat in patientsPerMutationSorted:
@@ -324,14 +340,14 @@ def getCommonMutationsAndPrintMutationStatistics(patients, mutationSet):
             break
 
         if not cutoffReached and mutationStat[1] < MIN_N:
-            sys.stdout.write("---cutoff--- (mutations below are not considered)\n")
+            say("---cutoff--- (mutations below are not considered)\n")
             cutoffReached = True
             
         for patient in patients.valid():
             if patient.getMutations().has(mutationStat[0]):
                 cumulativeSet.add(patient)
 
-        sys.stdout.write("%-10s %2d patients, cumulative %2d/%2d (%.2f%%)\n" % (
+        say("%-10s %2d patients, cumulative %2d/%2d (%.2f%%)\n" % (
             mutationStat[0],
             mutationStat[1],
             len(cumulativeSet),
@@ -342,7 +358,7 @@ def getCommonMutationsAndPrintMutationStatistics(patients, mutationSet):
     return retval
 
 
-def classifyMutationSignificance(patients, expressionProteinSet, mutationSet):
+def classifyMutationSignificance(patients, expressionProteinSet, mutationSet, csvOutputFile):
     # Test each mutation for significance
     results = []
     i = 0
@@ -373,16 +389,26 @@ def classifyMutationSignificance(patients, expressionProteinSet, mutationSet):
         if result.significance > 0.01:
             break;
 
-        sys.stdout.write("%s\n" % (result))
+        say("%s\n" % (result))
+        csvOutputFile.write("%s\n" % (result.csv()))
+
         correlationCounter[result.getMutationList()] += 1
 
-    sys.stdout.write("\nSignificant effects:\n")
+    say("\nSignificant effects:\n")
 
     for mut, count in correlationCounter.most_common():
-        sys.stdout.write("%20s %d\n" % (mut, count))
+        say("%20s %d\n" % (mut, count))
 
 
 def main():
+    if len(sys.argv) != 2:
+        sys.stderr.write("Usage: %s <output-filename-prefix>\n" % (sys.argv[0]))
+        sys.exit(1)
+
+    global outFile
+    outFile = open(sys.argv[1] + ".txt", "w")
+    csvOutputFile = open(sys.argv[1] + ".csv", "w")
+
     patients = Patients()
 
     # Generate the set of proteins for which at least one valid patient has expression data
@@ -395,14 +421,15 @@ def main():
     for patient in patients.valid():
         mutationSet.update(patient.getMutations().all())
 
-    sys.stdout.write("Valid patients: %d mutations, expression data for %d proteins\n" % (
+    say("Valid patients: %d mutations, expression data for %d proteins\n" % (
         len(mutationSet), len(expressionProteinSet)))
 
     commonMutations = getCommonMutationsAndPrintMutationStatistics(patients, mutationSet)
+    commonMutations = commonMutations[-1:]
 
     sys.stderr.write("Common mutations: %s\n" % (commonMutations))
 
-    classifyMutationSignificance(patients, expressionProteinSet, commonMutations)
+    classifyMutationSignificance(patients, expressionProteinSet, commonMutations, csvOutputFile)
 
 main()
 
