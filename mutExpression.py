@@ -10,7 +10,7 @@ import scipy
 import scipy.stats
 import itertools
 import collections
-import rpy2
+import rpy2.robjects as robjects
 
 MIN_N = 5
 
@@ -39,7 +39,7 @@ class Patients:
         return self.map[patientId]
 
     def all(self):
-        return self.map.values()
+        return sorted(self.map.values())
 
     def valid(self):
         return [p for p in self.all() if p.isValid()]
@@ -50,6 +50,8 @@ class Patients:
 
     # Populates each patient record with their expression ExpressionData 
     def getExpressionData(self):
+        sys.stderr.write("Reading expression data\n")
+
         for resultDir in glob.glob('../rna-gene-expression/*'):
             studyId = os.path.basename(resultDir)
 
@@ -72,7 +74,63 @@ class Patients:
 
             self.get(patientNumber).setExpressionData(ExpressionData(countFile))
 
+        ############
+        # Correct the expression data for coverage using the PoissonSeq library in R
+        # http://cran.r-project.org/web/packages/PoissonSeq/index.html
+
+        # First, generate the canonical list of proteins for which we have expression data
+        # for every patient
+        sys.stderr.write("Constructing protein list\n")
+
+        expressionProteinSet = collections.Counter()
+        numValidPatients = 0
+        for patient in self.valid():
+            numValidPatients += 1
+            expressionProteinSet.update(patient.getExpressionData().proteins())
+
+        sys.stderr.write("Finding fully measured expressed proteins\n")
+        proteinList = []
+        for protein in sorted(expressionProteinSet.keys()):
+            if expressionProteinSet[protein] == numValidPatients:
+                proteinList.append(protein)
+
+        sys.stderr.write("%d/%d proteins have expression data for all %d valid patients\n" % (
+            len(proteinList), len(expressionProteinSet), numValidPatients))
+
+        # Construct matrix to pass to PoissonSeq -- columns are samples, rows are genes.
+        # R's matrix constructor takes items in column-major order by default
+        sys.stderr.write("Constructing matrix for correction\n")
+        expressionList = []
+        for patient in self.valid():
+            for protein in proteinList:
+                expressionList.append(patient.getExpressionData().get(protein))
+
+        # Pass expression matrix to PoissonSeq for correction and get the corrections back!
+        robjects.globalenv['eMat'] = robjects.r.matrix(robjects.IntVector(expressionList), nrow=len(proteinList))
+        robjects.r('library("PoissonSeq")')
+        scaleVector = robjects.r('scaleVector = PS.Est.Depth(eMat)')
+
+        s = "Relative coverages per patient:\n%s\n" % (scaleVector)
+        sys.stdout.write(s)
+        sys.stderr.write(s)
+
+        i = 0
+        for patient in self.valid():
+            patient.getExpressionData().correct(scaleVector[i])
+            i += 1
+
+        
+            
+    def allValidPatientsHaveExpressionForProtein(self, protein):
+        for patient in self.valid():
+            if not patient.getExpressionData().has(protein):
+                return False
+
+        return True
+
     def getMutationData(self):
+        sys.stderr.write("Reading mutation data\n")
+
         with open('../tcga-laml.csv', 'r') as mutationsCSV:
             mutations = csv.reader(mutationsCSV, delimiter=',')
             headerSkipped = False
@@ -127,6 +185,9 @@ class ExpressionData:
     def get(self, protein):
         return self.protein[protein]
 
+    def correct(self, scaleFactor):
+        for p in self.protein:
+            self.protein[p] /= scaleFactor
 
 class Mutations:
     def __init__(self):
@@ -170,13 +231,19 @@ class Result:
 def getExpressionData(patientList, protein):
     expressionDataList = []
 
+    hasData = False
+
     for patient in patientList:
         expressionData = patient.getExpressionData()
 
         if expressionData.has(protein):
-            expressionDataList.append(expressionData.get(protein))
+            val = expressionData.get(protein)
+            expressionDataList.append(val)
 
-    return expressionDataList
+            if val > 0:
+                hasData = True
+
+    return (expressionDataList, hasData)
 
 def classifyByMutation(patients, proteinSet, mutationList):
     retval = []
@@ -200,13 +267,19 @@ def classifyByMutation(patients, proteinSet, mutationList):
 
     # Ignore very small sample sizes
     if len(normalPatients) < MIN_N or len(mutatedPatients) < MIN_N:
-        #sys.stdout.write("  %s: mutated in only %d patients\n" % (mutation, len(mutatedPatients)))
+        sys.stdout.write("  %s: mutated in only %d patients\n" % (mutationList, len(mutatedPatients)))
         return []
+
+    sys.stderr.write("Testing %s...\n" % (mutationList))
 
     # Find significance of this split for each protein's expression data
     for protein in proteinSet:
-        normalExpressions = getExpressionData(normalPatients, protein)
-        mutatedExpressions = getExpressionData(mutatedPatients, protein)
+        (normalExpressions, normalHasData) = getExpressionData(normalPatients, protein)
+        (mutatedExpressions, mutatedHasData) = getExpressionData(mutatedPatients, protein)
+
+        # If all expressions are 0 in both classes, ignore. (Invalid for mann-whitney u test)
+        if not normalHasData and not mutatedHasData:
+            continue
 
         # Check again for small sample sizes, in case not all patients have
         # expression data for all proteins
@@ -215,7 +288,10 @@ def classifyByMutation(patients, proteinSet, mutationList):
 
         try:
             (u, p) = scipy.stats.mannwhitneyu(normalExpressions, mutatedExpressions)
-        except:
+        except Exception, e:
+            print e
+            print normalExpressions
+            print mutatedExpressions
             continue
 
         retval.append(Result(mutationList, protein, p, normalExpressions, mutatedExpressions))
@@ -223,11 +299,14 @@ def classifyByMutation(patients, proteinSet, mutationList):
     return retval
 
 # Generate statistics about number of patients who share mutations
-def printMutationStatistics(patients, mutationSet):
+def getCommonMutationsAndPrintMutationStatistics(patients, mutationSet):
     patientsPerMutation = collections.Counter()
     for patient in patients.valid():
         patientsPerMutation.update(patient.getMutations().all())
-                
+
+    # Get common mutations
+    retval = [item[0] for item in patientsPerMutation.items() if item[1] >= MIN_N]
+
     # Sort first by number of mutations (descending), then by mutation name.
     # We do this by constructing a string as the key that contains the (negated) number of mutations
     # followed by the mutation name, to break ties.
@@ -259,7 +338,9 @@ def printMutationStatistics(patients, mutationSet):
             totalP,
             100.0 * len(cumulativeSet) / totalP
             ))
-            
+
+    return retval
+
 
 def classifyMutationSignificance(patients, expressionProteinSet, mutationSet):
     # Test each mutation for significance
@@ -317,9 +398,11 @@ def main():
     sys.stdout.write("Valid patients: %d mutations, expression data for %d proteins\n" % (
         len(mutationSet), len(expressionProteinSet)))
 
-    printMutationStatistics(patients, mutationSet)
+    commonMutations = getCommonMutationsAndPrintMutationStatistics(patients, mutationSet)
 
-    classifyMutationSignificance(patients, expressionProteinSet, mutationSet)
+    sys.stderr.write("Common mutations: %s\n" % (commonMutations))
+
+    classifyMutationSignificance(patients, expressionProteinSet, commonMutations)
 
 main()
 
