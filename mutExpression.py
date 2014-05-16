@@ -10,6 +10,7 @@ import scipy
 import scipy.stats
 import itertools
 import collections
+import rpy2
 
 MIN_N = 5
 
@@ -21,15 +22,15 @@ class Patients:
         self.map = {}
 
         self.getMutationData()
-        self.getFunctionalData()
+        self.getExpressionData()
 
         # Print some statistics
-        has_funcs = len([p for p in self.all() if p.getFunctionalData()])
+        has_expressions = len([p for p in self.all() if p.getExpressionData()])
         has_muts = len([p for p in self.all() if p.getMutations().hasData()])
         has_both = len(self.valid())
 
-        sys.stdout.write("Got functional data for %d, mutations for %d, both for %d\n" % (
-            has_funcs, has_muts, has_both))
+        sys.stdout.write("Got expression data for %d, mutations for %d, both for %d\n" % (
+            has_expressions, has_muts, has_both))
 
     def get(self, patientId):
         if not patientId in self.map:
@@ -47,8 +48,8 @@ class Patients:
         return len(self.map.keys())
 
 
-    # Populates each patient record with their expression FunctionalData 
-    def getFunctionalData(self):
+    # Populates each patient record with their expression ExpressionData 
+    def getExpressionData(self):
         for resultDir in glob.glob('../rna-gene-expression/*'):
             studyId = os.path.basename(resultDir)
 
@@ -69,7 +70,7 @@ class Patients:
 
             patientNumber = patientIdFromSampleId(sampleId)
 
-            self.get(patientNumber).setFunctionalData(FunctionalData(countFile))
+            self.get(patientNumber).setExpressionData(ExpressionData(countFile))
 
     def getMutationData(self):
         with open('../tcga-laml.csv', 'r') as mutationsCSV:
@@ -95,21 +96,21 @@ class Patients:
 class PatientData:
     def __init__(self):
         self.mutations = Mutations()
-        self.functionalData = None
+        self.expressionData = None
 
     def isValid(self):
-        return self.getMutations().hasData() and self.getFunctionalData()
+        return self.getMutations().hasData() and self.getExpressionData()
 
     def getMutations(self):
         return self.mutations
 
-    def getFunctionalData(self):
-        return self.functionalData
+    def getExpressionData(self):
+        return self.expressionData
 
-    def setFunctionalData(self, functionalData):
-        self.functionalData = functionalData
+    def setExpressionData(self, expressionData):
+        self.expressionData = expressionData
 
-class FunctionalData:
+class ExpressionData:
     def __init__(self, filename):
         self.protein = {}
 
@@ -166,16 +167,16 @@ class Result:
             len(self.mutatedSet),
             self.significance)
 
-def getFunctionalData(patientList, protein):
-    functionalDataList = []
+def getExpressionData(patientList, protein):
+    expressionDataList = []
 
     for patient in patientList:
-        funcData = patient.getFunctionalData()
+        expressionData = patient.getExpressionData()
 
-        if funcData.has(protein):
-            functionalDataList.append(funcData.get(protein))
+        if expressionData.has(protein):
+            expressionDataList.append(expressionData.get(protein))
 
-    return functionalDataList
+    return expressionDataList
 
 def classifyByMutation(patients, proteinSet, mutationList):
     retval = []
@@ -202,22 +203,22 @@ def classifyByMutation(patients, proteinSet, mutationList):
         #sys.stdout.write("  %s: mutated in only %d patients\n" % (mutation, len(mutatedPatients)))
         return []
 
-    # Find significance of this split for each protein's functional data
+    # Find significance of this split for each protein's expression data
     for protein in proteinSet:
-        normalFunctions = getFunctionalData(normalPatients, protein)
-        mutatedFunctions = getFunctionalData(mutatedPatients, protein)
+        normalExpressions = getExpressionData(normalPatients, protein)
+        mutatedExpressions = getExpressionData(mutatedPatients, protein)
 
         # Check again for small sample sizes, in case not all patients have
-        # functional data for all proteins
-        if len(normalFunctions) < MIN_N or len(mutatedFunctions) < MIN_N:
+        # expression data for all proteins
+        if len(normalExpressions) < MIN_N or len(mutatedExpressions) < MIN_N:
             continue
 
         try:
-            (u, p) = scipy.stats.mannwhitneyu(normalFunctions, mutatedFunctions)
+            (u, p) = scipy.stats.mannwhitneyu(normalExpressions, mutatedExpressions)
         except:
             continue
 
-        retval.append(Result(mutationList, protein, p, normalFunctions, mutatedFunctions))
+        retval.append(Result(mutationList, protein, p, normalExpressions, mutatedExpressions))
 
     return retval
 
@@ -260,7 +261,7 @@ def printMutationStatistics(patients, mutationSet):
             ))
             
 
-def classifyMutationSignificance(patients, functionalProteinSet, mutationSet):
+def classifyMutationSignificance(patients, expressionProteinSet, mutationSet):
     # Test each mutation for significance
     results = []
     i = 0
@@ -268,7 +269,7 @@ def classifyMutationSignificance(patients, functionalProteinSet, mutationSet):
     for setSize in [1, 2]:
         for mutationList in itertools.combinations(mutationSet, setSize):
             i += 1
-            retval = classifyByMutation(patients, functionalProteinSet, mutationList)
+            retval = classifyByMutation(patients, expressionProteinSet, mutationList)
 
             if len(retval) > 0:
                 sys.stderr.write("%3d/%3d [%-10s] %d candidate proteins\n" % (
@@ -303,22 +304,22 @@ def classifyMutationSignificance(patients, functionalProteinSet, mutationSet):
 def main():
     patients = Patients()
 
-    # Generate the set of proteins for which at least one valid patient has functional data
-    functionalProteinSet = set()
+    # Generate the set of proteins for which at least one valid patient has expression data
+    expressionProteinSet = set()
     for patient in patients.valid():
-        functionalProteinSet.update(patient.getFunctionalData().proteins())
+        expressionProteinSet.update(patient.getExpressionData().proteins())
 
     # Generate the set of mutations in at least one valid patient
     mutationSet = set()
     for patient in patients.valid():
         mutationSet.update(patient.getMutations().all())
 
-    sys.stdout.write("Valid patients: %d mutations, functional data for %d proteins\n" % (
-        len(mutationSet), len(functionalProteinSet)))
+    sys.stdout.write("Valid patients: %d mutations, expression data for %d proteins\n" % (
+        len(mutationSet), len(expressionProteinSet)))
 
     printMutationStatistics(patients, mutationSet)
 
-    classifyMutationSignificance(patients, functionalProteinSet, mutationSet)
+    classifyMutationSignificance(patients, expressionProteinSet, mutationSet)
 
 main()
 
