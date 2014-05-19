@@ -15,8 +15,8 @@ import rpy2.robjects as robjects
 MIN_N = 5
 
 #PROTEINS_OF_INTEREST = []
-#PROTEINS_OF_INTEREST = ['SPI1', 'SPIB', 'SPIC']
-PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
+PROTEINS_OF_INTEREST = ['SPI1', 'SPIB', 'SPIC']
+#PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
 
 global outFile
 def say(s):
@@ -153,9 +153,9 @@ class Patients:
                     continue
 
                 # original tcga-laml
-                gene = mut[0]
-                mutType = mut[8]
-                sampleId = mut[15]
+#                gene = mut[0]
+#                mutType = mut[8]
+#                sampleId = mut[15]
 
                 # frank's annotations
                 gene = mut[0]
@@ -380,6 +380,9 @@ def classifyMutationSignificance(patients, expressionProteinSet, mutationSet, cs
     # Test each mutation for significance
     results = []
     i = 0
+
+    csvOutputFile.write(",".join(["Mutation","ProteinExpressed","UnmutatedMean","UnmutatedStdDev","MutatedMean","MutatedStdDev","n","p_post_bonferroni"]))
+    csvOutputFile.write("\n")
 
     for setSize in [1, 2]:
         for mutationList in itertools.combinations(mutationSet, setSize):
