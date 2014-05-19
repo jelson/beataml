@@ -14,13 +14,20 @@ import rpy2.robjects as robjects
 
 MIN_N = 5
 
+#PROTEINS_OF_INTEREST = []
+#PROTEINS_OF_INTEREST = ['SPI1', 'SPIB', 'SPIC']
+PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
+
 global outFile
 def say(s):
     outFile.write(s)
     sys.stderr.write(s)
 
 def patientIdFromSampleId(sampleId):
-    return int(sampleId.split("-")[2])
+    if 'TCGA' in sampleId:
+        return int(sampleId.split("-")[2])
+    else:
+        return int(sampleId.split("-")[0])
 
 class Patients:
     def __init__(self):
@@ -57,7 +64,7 @@ class Patients:
     def getExpressionData(self):
         sys.stderr.write("Reading expression data\n")
 
-        for resultDir in glob.glob('../rna-gene-expression/*'):
+        for resultDir in glob.glob('../../../rna-gene-expression/*'):
             studyId = os.path.basename(resultDir)
 
             metadataFile = os.path.join(resultDir, studyId + ".cgquery.xml")
@@ -136,7 +143,7 @@ class Patients:
     def getMutationData(self):
         sys.stderr.write("Reading mutation data\n")
 
-        with open('../tcga-laml.csv', 'r') as mutationsCSV:
+        with open('../data/tcga-laml-genes-frankannotations.csv', 'r') as mutationsCSV:
             mutations = csv.reader(mutationsCSV, delimiter=',')
             headerSkipped = False
 
@@ -145,9 +152,16 @@ class Patients:
                     headerSkipped = True
                     continue
 
+                # original tcga-laml
                 gene = mut[0]
                 mutType = mut[8]
                 sampleId = mut[15]
+
+                # frank's annotations
+                gene = mut[0]
+                mutType = mut[1]
+                sampleId = mut[2]
+
                 patientNumber = patientIdFromSampleId(sampleId)
 
                 # Skip "harmless" mutations
@@ -290,6 +304,10 @@ def classifyByMutation(patients, proteinSet, mutationList):
 
     # Find significance of this split for each protein's expression data
     for protein in proteinSet:
+        if PROTEINS_OF_INTEREST:
+            if not protein in PROTEINS_OF_INTEREST:
+                continue
+
         (normalExpressions, normalHasData) = getExpressionData(normalPatients, protein)
         (mutatedExpressions, mutatedHasData) = getExpressionData(mutatedPatients, protein)
 
@@ -386,7 +404,7 @@ def classifyMutationSignificance(patients, expressionProteinSet, mutationSet, cs
     correlationCounter = collections.Counter()
 
     for result in results:
-        if result.significance > 0.01:
+        if not PROTEINS_OF_INTEREST and result.significance > 0.01:
             break;
 
         say("%s\n" % (result))
