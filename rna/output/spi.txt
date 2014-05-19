@@ -1,0 +1,230 @@
+Relative coverages per patient:
+ [1] 1.2331375 1.1946761 1.1090882 0.9809833 0.9721054 0.7778799 0.8850491
+ [8] 0.9264620 0.8791458 1.0792184 0.9387281 1.1084433 0.6587240 0.7716232
+[15] 0.8340672 0.7455550 0.6330999 0.8242995 1.4541258 1.2254111 1.7438583
+[22] 1.2685383 1.2971434 1.0056373 1.3619251 1.2838919 1.5992971 0.7755010
+[29] 1.1409524 1.2501662 0.7443356 1.4227322 0.8302240 1.3522403 1.3783811
+[36] 1.2910796 1.1361520 1.2360554 0.7861182 0.5943651 0.7550485 1.2940527
+[43] 0.8761468 0.9163015 0.8904208 0.7288009 1.0056113 1.0680548 0.7239472
+[50] 0.6244683 0.7755667 0.9863449 1.0012601 1.4170457 1.0060572 0.6487715
+[57] 0.9937895 0.7886688 0.8322410 0.8591182 1.0257965 0.8734235 1.2083469
+[64] 1.0139634 0.9404561 0.8841940 0.8799955 1.1484507 0.8345956 0.9214596
+[71] 1.2058998 1.3918003 0.9935506 1.2475016 1.0564937 0.9855089 1.1884097
+[78] 1.1206974 1.1494804 0.9213118 0.8457552 1.2391590 1.0960452 1.0976095
+[85] 1.0189117 0.8990618 0.8896803 0.8990292 1.1283888 1.1040697 1.1432327
+
+Got expression data for 91, mutations for 196, both for 91
+Valid patients: 729 mutations, expression data for 50355 proteins
+
+Mutation prevalence
+DNMT3A     23 patients, cumulative 23/91 (25.27%)
+NPM1       23 patients, cumulative 36/91 (39.56%)
+FLT3-ITD   21 patients, cumulative 46/91 (50.55%)
+IDH1       11 patients, cumulative 49/91 (53.85%)
+IDH2       10 patients, cumulative 53/91 (58.24%)
+RUNX1      10 patients, cumulative 57/91 (62.64%)
+TET2       10 patients, cumulative 61/91 (67.03%)
+CEBPA       6 patients, cumulative 64/91 (70.33%)
+WT1         6 patients, cumulative 65/91 (71.43%)
+FLT3        5 patients, cumulative 65/91 (71.43%)
+NRAS        5 patients, cumulative 65/91 (71.43%)
+TP53        5 patients, cumulative 68/91 (74.73%)
+TTN         5 patients, cumulative 69/91 (75.82%)
+---cutoff--- (mutations below are not considered)
+KIT         4 patients, cumulative 71/91 (78.02%)
+KRAS        4 patients, cumulative 73/91 (80.22%)
+PTPN11      4 patients, cumulative 74/91 (81.32%)
+RAD21       4 patients, cumulative 75/91 (82.42%)
+SMC3        4 patients, cumulative 76/91 (83.52%)
+U2AF1       4 patients, cumulative 77/91 (84.62%)
+COL12A1     3 patients, cumulative 77/91 (84.62%)
+GRIK2       3 patients, cumulative 78/91 (85.71%)
+PHF6        3 patients, cumulative 78/91 (85.71%)
+STAG2       3 patients, cumulative 78/91 (85.71%)
+APOB        2 patients, cumulative 78/91 (85.71%)
+ARAP2       2 patients, cumulative 78/91 (85.71%)
+ASXL1       2 patients, cumulative 78/91 (85.71%)
+ATP10B      2 patients, cumulative 78/91 (85.71%)
+C17orf97    2 patients, cumulative 79/91 (86.81%)
+CACNA1E     2 patients, cumulative 80/91 (87.91%)
+CACNA2D3    2 patients, cumulative 80/91 (87.91%)
+CALR        2 patients, cumulative 81/91 (89.01%)
+CNTNAP4     2 patients, cumulative 81/91 (89.01%)
+CSMD1       2 patients, cumulative 81/91 (89.01%)
+DDX41       2 patients, cumulative 82/91 (90.11%)
+E2F8        2 patients, cumulative 82/91 (90.11%)
+ETV6        2 patients, cumulative 83/91 (91.21%)
+FAM5C       2 patients, cumulative 83/91 (91.21%)
+GATA2       2 patients, cumulative 83/91 (91.21%)
+GBP4        2 patients, cumulative 83/91 (91.21%)
+GJB3        2 patients, cumulative 83/91 (91.21%)
+GPR112      2 patients, cumulative 84/91 (92.31%)
+GRM3        2 patients, cumulative 84/91 (92.31%)
+HECW1       2 patients, cumulative 84/91 (92.31%)
+ILDR1       2 patients, cumulative 84/91 (92.31%)
+KCNA4       2 patients, cumulative 85/91 (93.41%)
+KDM3B       2 patients, cumulative 85/91 (93.41%)
+MT-CO2      2 patients, cumulative 85/91 (93.41%)
+MT-CO3      2 patients, cumulative 85/91 (93.41%)
+MT-CYB      2 patients, cumulative 85/91 (93.41%)
+MT-ND5      2 patients, cumulative 85/91 (93.41%)
+MUC16       2 patients, cumulative 85/91 (93.41%)
+NMUR2       2 patients, cumulative 85/91 (93.41%)
+PHIP        2 patients, cumulative 85/91 (93.41%)
+PKD1L2      2 patients, cumulative 85/91 (93.41%)
+PLCE1       2 patients, cumulative 85/91 (93.41%)
+RNF213      2 patients, cumulative 85/91 (93.41%)
+SEMA3A      2 patients, cumulative 85/91 (93.41%)
+SEMA4A      2 patients, cumulative 85/91 (93.41%)
+SETBP1      2 patients, cumulative 85/91 (93.41%)
+SMC1A       2 patients, cumulative 85/91 (93.41%)
+SPEN        2 patients, cumulative 85/91 (93.41%)
+STRN        2 patients, cumulative 85/91 (93.41%)
+TCEAL6      2 patients, cumulative 85/91 (93.41%)
+THRAP3      2 patients, cumulative 85/91 (93.41%)
+TOP3B       2 patients, cumulative 85/91 (93.41%)
+ZBTB33      2 patients, cumulative 85/91 (93.41%)
+  ('IDH1', 'WT1'): mutated in only 1 patients
+  ('IDH1', 'FLT3'): mutated in only 2 patients
+  ('IDH1', 'CEBPA'): mutated in only 1 patients
+  ('IDH1', 'TET2'): mutated in only 1 patients
+  ('IDH1', 'TTN'): mutated in only 1 patients
+  ('IDH1', 'IDH2'): mutated in only 1 patients
+  ('IDH1', 'RUNX1'): mutated in only 2 patients
+  ('IDH1', 'FLT3-ITD'): mutated in only 0 patients
+  ('IDH1', 'TP53'): mutated in only 0 patients
+  ('IDH1', 'NRAS'): mutated in only 1 patients
+  ('IDH1', 'NPM1'): mutated in only 4 patients
+  ('WT1', 'FLT3'): mutated in only 0 patients
+  ('WT1', 'CEBPA'): mutated in only 0 patients
+  ('WT1', 'TET2'): mutated in only 0 patients
+  ('WT1', 'TTN'): mutated in only 0 patients
+  ('WT1', 'IDH2'): mutated in only 0 patients
+  ('WT1', 'RUNX1'): mutated in only 1 patients
+  ('WT1', 'FLT3-ITD'): mutated in only 4 patients
+  ('WT1', 'TP53'): mutated in only 0 patients
+  ('WT1', 'NRAS'): mutated in only 0 patients
+  ('WT1', 'DNMT3A'): mutated in only 1 patients
+  ('WT1', 'NPM1'): mutated in only 3 patients
+  ('FLT3', 'CEBPA'): mutated in only 1 patients
+  ('FLT3', 'TET2'): mutated in only 1 patients
+  ('FLT3', 'TTN'): mutated in only 0 patients
+  ('FLT3', 'IDH2'): mutated in only 0 patients
+  ('FLT3', 'RUNX1'): mutated in only 0 patients
+  ('FLT3', 'FLT3-ITD'): mutated in only 0 patients
+  ('FLT3', 'TP53'): mutated in only 0 patients
+  ('FLT3', 'NRAS'): mutated in only 0 patients
+  ('FLT3', 'DNMT3A'): mutated in only 2 patients
+  ('FLT3', 'NPM1'): mutated in only 4 patients
+  ('CEBPA', 'TET2'): mutated in only 0 patients
+  ('CEBPA', 'TTN'): mutated in only 0 patients
+  ('CEBPA', 'IDH2'): mutated in only 0 patients
+  ('CEBPA', 'RUNX1'): mutated in only 0 patients
+  ('CEBPA', 'FLT3-ITD'): mutated in only 0 patients
+  ('CEBPA', 'TP53'): mutated in only 1 patients
+  ('CEBPA', 'NRAS'): mutated in only 2 patients
+  ('CEBPA', 'DNMT3A'): mutated in only 2 patients
+  ('CEBPA', 'NPM1'): mutated in only 1 patients
+  ('TET2', 'TTN'): mutated in only 0 patients
+  ('TET2', 'IDH2'): mutated in only 0 patients
+  ('TET2', 'RUNX1'): mutated in only 0 patients
+  ('TET2', 'FLT3-ITD'): mutated in only 3 patients
+  ('TET2', 'TP53'): mutated in only 1 patients
+  ('TET2', 'NRAS'): mutated in only 0 patients
+  ('TET2', 'DNMT3A'): mutated in only 4 patients
+  ('TET2', 'NPM1'): mutated in only 2 patients
+  ('TTN', 'IDH2'): mutated in only 0 patients
+  ('TTN', 'RUNX1'): mutated in only 1 patients
+  ('TTN', 'FLT3-ITD'): mutated in only 2 patients
+  ('TTN', 'TP53'): mutated in only 0 patients
+  ('TTN', 'NRAS'): mutated in only 0 patients
+  ('TTN', 'DNMT3A'): mutated in only 2 patients
+  ('TTN', 'NPM1'): mutated in only 2 patients
+  ('IDH2', 'RUNX1'): mutated in only 3 patients
+  ('IDH2', 'FLT3-ITD'): mutated in only 1 patients
+  ('IDH2', 'TP53'): mutated in only 0 patients
+  ('IDH2', 'NRAS'): mutated in only 0 patients
+  ('IDH2', 'DNMT3A'): mutated in only 3 patients
+  ('IDH2', 'NPM1'): mutated in only 2 patients
+  ('RUNX1', 'FLT3-ITD'): mutated in only 1 patients
+  ('RUNX1', 'TP53'): mutated in only 0 patients
+  ('RUNX1', 'NRAS'): mutated in only 0 patients
+  ('RUNX1', 'DNMT3A'): mutated in only 2 patients
+  ('RUNX1', 'NPM1'): mutated in only 0 patients
+  ('FLT3-ITD', 'TP53'): mutated in only 0 patients
+  ('FLT3-ITD', 'NRAS'): mutated in only 1 patients
+  ('TP53', 'NRAS'): mutated in only 1 patients
+  ('TP53', 'DNMT3A'): mutated in only 1 patients
+  ('TP53', 'NPM1'): mutated in only 0 patients
+  ('NRAS', 'DNMT3A'): mutated in only 2 patients
+  ('NRAS', 'NPM1'): mutated in only 1 patients
+           NPM1:            SPIB   204.59 +/-   413.80  -->     41.35 +/-    44.86, n=23, p=0.000880
+          RUNX1:            SPIB    84.87 +/-    84.57  -->    798.88 +/-   838.48, n=10, p=0.010946
+       FLT3-ITD:            SPIC     3.85 +/-     9.68  -->      0.43 +/-     1.02, n=21, p=0.018399
+  FLT3-ITD+NPM1:            SPIB   180.96 +/-   385.99  -->     35.14 +/-    45.65, n=11, p=0.027533
+  FLT3-ITD+NPM1:            SPIC     3.47 +/-     9.13  -->      0.14 +/-     0.44, n=11, p=0.086868
+           NPM1:            SPIC     2.89 +/-     4.40  -->      3.58 +/-    15.38, n=23, p=0.089024
+           FLT3:            SPIB   171.70 +/-   374.13  -->     19.38 +/-     9.46, n= 5, p=0.172466
+FLT3-ITD+DNMT3A:            SPIB   171.64 +/-   374.15  -->     20.38 +/-    10.71, n= 5, p=0.191447
+         DNMT3A:            SPIB   201.33 +/-   415.18  -->     50.98 +/-    40.46, n=23, p=0.252040
+    DNMT3A+NPM1:            SPIB   178.10 +/-   384.37  -->     43.70 +/-    44.69, n=10, p=0.579807
+           TET2:            SPIB   178.87 +/-   384.34  -->     37.47 +/-    21.49, n=10, p=0.661558
+            TTN:            SPI1  3175.74 +/-  1876.62  -->   6070.32 +/-  3735.15, n= 5, p=1.559779
+          RUNX1:            SPIC     3.04 +/-     9.08  -->      3.26 +/-     3.15, n=10, p=1.659067
+  FLT3-ITD+NPM1:            SPI1  3456.44 +/-  2186.82  -->   2449.94 +/-  1343.13, n=11, p=2.339886
+FLT3-ITD+DNMT3A:            SPIC     3.22 +/-     8.85  -->      0.31 +/-     0.62, n= 5, p=3.165594
+          RUNX1:            SPI1  3455.94 +/-  2207.31  -->   2353.38 +/-   821.40, n=10, p=3.911875
+           FLT3:            SPI1  3282.54 +/-  2144.07  -->   4233.34 +/-  1587.48, n= 5, p=4.103084
+           TP53:            SPIC     3.10 +/-     8.86  -->      2.51 +/-     1.97, n= 5, p=4.193122
+         DNMT3A:            SPIC     2.62 +/-     4.37  -->      4.37 +/-    15.35, n=23, p=4.229832
+           IDH1:            SPIB   178.76 +/-   386.97  -->     51.12 +/-    30.88, n=11, p=4.259194
+            WT1:            SPI1  3409.03 +/-  2163.91  -->   2282.94 +/-  1087.40, n= 6, p=4.769686
+    IDH1+DNMT3A:            SPIB   172.90 +/-   378.59  -->     48.48 +/-    33.58, n= 7, p=4.908784
+           FLT3:            SPIC     3.22 +/-     8.85  -->      0.31 +/-     0.38, n= 5, p=5.282675
+           IDH2:            SPIB   170.02 +/-   385.59  -->    109.15 +/-    84.83, n=10, p=5.628858
+       FLT3-ITD:            SPI1  3511.75 +/-  2279.11  -->   2744.88 +/-  1364.72, n=21, p=5.952215
+    DNMT3A+NPM1:            SPI1  3252.22 +/-  2111.45  -->   4003.47 +/-  2146.55, n=10, p=7.087268
+            WT1:            SPIC     3.25 +/-     8.89  -->      0.42 +/-     0.43, n= 6, p=7.410385
+          CEBPA:            SPIB   167.16 +/-   376.01  -->    109.13 +/-   136.01, n= 6, p=8.097339
+    DNMT3A+NPM1:            SPIC     2.46 +/-     4.16  -->      7.97 +/-    22.59, n=10, p=8.263537
+       FLT3-ITD:            SPIB   161.50 +/-   359.72  -->    169.44 +/-   383.52, n=21, p=9.912872
+          CEBPA:            SPIC     3.06 +/-     8.88  -->      3.14 +/-     3.52, n= 6, p=11.781395
+           NPM1:            SPI1  3234.76 +/-  2133.87  -->   3630.50 +/-  2084.02, n=23, p=12.072888
+           IDH1:            SPI1  3255.65 +/-  1935.35  -->   3910.29 +/-  3139.55, n=11, p=14.568465
+           TP53:            SPIB   166.33 +/-   374.29  -->    111.78 +/-   131.14, n= 5, p=14.873259
+FLT3-ITD+DNMT3A:            SPI1  3362.70 +/-  2152.28  -->   2854.55 +/-  1588.59, n= 5, p=14.873259
+          CEBPA:            SPI1  3269.74 +/-  2047.91  -->   4256.13 +/-  2894.75, n= 6, p=15.099474
+           NRAS:            SPIB   162.78 +/-   373.73  -->    172.82 +/-   164.54, n= 5, p=15.488694
+         DNMT3A:            SPI1  3307.13 +/-  2184.61  -->   3416.51 +/-  1950.25, n=23, p=16.106386
+           NRAS:            SPI1  3282.90 +/-  2058.70  -->   4227.16 +/-  2949.99, n= 5, p=16.115242
+           IDH2:            SPIC     3.23 +/-     9.08  -->      1.69 +/-     2.56, n=10, p=17.150319
+            WT1:            SPIB   148.34 +/-   330.55  -->    375.70 +/-   654.52, n= 6, p=17.727527
+           IDH1:            SPIC     3.22 +/-     9.12  -->      1.90 +/-     3.05, n=11, p=19.940201
+            TTN:            SPIB   158.87 +/-   363.00  -->    240.04 +/-   396.04, n= 5, p=20.073435
+    IDH1+DNMT3A:            SPIC     3.17 +/-     8.93  -->      1.74 +/-     2.97, n= 7, p=20.272329
+            TTN:            SPIC     3.15 +/-     8.86  -->      1.55 +/-     1.49, n= 5, p=20.857714
+           TP53:            SPI1  3314.36 +/-  2053.79  -->   3685.97 +/-  3124.48, n= 5, p=21.799872
+    IDH1+DNMT3A:            SPI1  3347.67 +/-  2164.03  -->   3180.11 +/-  1632.69, n= 7, p=22.331087
+           IDH2:            SPI1  3355.70 +/-  2165.82  -->   3165.31 +/-  1787.20, n=10, p=22.797036
+           NRAS:            SPIC     3.14 +/-     8.84  -->      1.74 +/-     2.68, n= 5, p=23.070478
+           TET2:            SPI1  3365.21 +/-  2193.88  -->   3088.25 +/-  1472.12, n=10, p=23.823685
+           TET2:            SPIC     3.26 +/-     9.11  -->      1.51 +/-     1.60, n=10, p=25.363510
+
+Significant effects:
+         IDH1+DNMT3A 3
+                 WT1 3
+               CEBPA 3
+            FLT3-ITD 3
+                TP53 3
+                IDH2 3
+                IDH1 3
+                TET2 3
+                NRAS 3
+     FLT3-ITD+DNMT3A 3
+               RUNX1 3
+                 TTN 3
+         DNMT3A+NPM1 3
+       FLT3-ITD+NPM1 3
+                NPM1 3
+                FLT3 3
+              DNMT3A 3
