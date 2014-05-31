@@ -1,5 +1,17 @@
 #!/usr/bin/python
 
+
+MIN_N = 5
+
+PROTEINS_OF_INTEREST = None
+#PROTEINS_OF_INTEREST = ['SPI1', 'SPIB', 'SPIC']
+#PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
+
+USE_CORRECTION = True
+RNA_PATH = '../data/rna-gene-expression'
+
+########################################################################
+
 import sys
 import os
 import glob
@@ -10,13 +22,9 @@ import scipy
 import scipy.stats
 import itertools
 import collections
-import rpy2.robjects as robjects
 
-MIN_N = 5
-
-#PROTEINS_OF_INTEREST = []
-PROTEINS_OF_INTEREST = ['SPI1', 'SPIB', 'SPIC']
-#PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
+if USE_CORRECTION:
+    import rpy2.robjects as robjects
 
 global outFile
 def say(s):
@@ -62,9 +70,22 @@ class Patients:
 
     # Populates each patient record with their expression ExpressionData 
     def getExpressionData(self):
-        sys.stderr.write("Reading expression data\n")
+        if not os.path.exists(RNA_PATH):
+            sys.stderr.write("Error: RNA data path '%s' does not exist" % (RNA_PATH))
+            sys.exit(1)
 
-        for resultDir in glob.glob('../../../rna-gene-expression/*'):
+        if not os.path.isdir(RNA_PATH):
+            sys.stderr.write("Error: RNA data path '%s' is not a directory" % (RNA_PATH))
+            sys.exit(1)
+
+        globList = glob.glob(os.path.join(RNA_PATH, "*"))
+
+        if len(globList) == 0:
+            sys.stderr.write("Error: RNA directory %s is empty" % (RNA_PATH))
+
+        sys.stderr.write("Reading expression data from %s\n" % (RNA_PATH))
+
+        for resultDir in globList:
             studyId = os.path.basename(resultDir)
 
             metadataFile = os.path.join(resultDir, studyId + ".cgquery.xml")
@@ -117,19 +138,20 @@ class Patients:
             for protein in proteinList:
                 expressionList.append(patient.getExpressionData().get(protein))
 
-        # Pass expression matrix to PoissonSeq for correction and get the corrections back!
-        robjects.globalenv['eMat'] = robjects.r.matrix(robjects.IntVector(expressionList), nrow=len(proteinList))
-        robjects.r('library("PoissonSeq")')
-        scaleVector = robjects.r('scaleVector = PS.Est.Depth(eMat)')
+        if USE_CORRECTION:
+            # Pass expression matrix to PoissonSeq for correction and get the corrections back!
+            robjects.globalenv['eMat'] = robjects.r.matrix(robjects.IntVector(expressionList), nrow=len(proteinList))
+            robjects.r('library("PoissonSeq")')
+            scaleVector = robjects.r('scaleVector = PS.Est.Depth(eMat)')
 
-        s = "Relative coverages per patient:\n%s\n" % (scaleVector)
-        say(s)
-        sys.stderr.write(s)
+            s = "Relative coverages per patient:\n%s\n" % (scaleVector)
+            say(s)
+            sys.stderr.write(s)
 
-        i = 0
-        for patient in self.valid():
-            patient.getExpressionData().correct(scaleVector[i])
-            i += 1
+            i = 0
+            for patient in self.valid():
+                patient.getExpressionData().correct(scaleVector[i])
+                i += 1
 
         
             
