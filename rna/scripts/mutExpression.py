@@ -41,8 +41,8 @@ class Patients:
     def __init__(self):
         self.map = {}
 
-        self.getMutationData()
-        self.getExpressionData()
+        self.readMutationData()
+        self.readExpressionData()
 
         # Print some statistics
         has_expressions = len([p for p in self.all() if p.getExpressionData()])
@@ -69,7 +69,7 @@ class Patients:
 
 
     # Populates each patient record with their expression ExpressionData 
-    def getExpressionData(self):
+    def readExpressionData(self):
         if not os.path.exists(RNA_PATH):
             sys.stderr.write("Error: RNA data path '%s' does not exist" % (RNA_PATH))
             sys.exit(1)
@@ -105,7 +105,7 @@ class Patients:
 
             patientNumber = patientIdFromSampleId(sampleId)
 
-            self.get(patientNumber).setExpressionData(ExpressionData(countFile))
+            self.get(patientNumber).setExpressionData(ExpressionData.getFromCountFile(countFile))
 
         ############
         # Correct the expression data for coverage using the PoissonSeq library in R
@@ -119,7 +119,7 @@ class Patients:
         numValidPatients = 0
         for patient in self.valid():
             numValidPatients += 1
-            expressionProteinSet.update(patient.getExpressionData().proteins())
+            expressionProteinSet.update(patient.getExpressionData().getAllProteins())
 
         sys.stderr.write("Finding fully measured expressed proteins\n")
         proteinList = []
@@ -162,7 +162,7 @@ class Patients:
 
         return True
 
-    def getMutationData(self):
+    def readMutationData(self):
         sys.stderr.write("Reading mutation data\n")
 
         with open('../data/tcga-laml-genes-frankannotations.csv', 'r') as mutationsCSV:
@@ -210,25 +210,34 @@ class PatientData:
         self.expressionData = expressionData
 
 class ExpressionData:
-    def __init__(self, filename):
-        self.protein = {}
+    def __init__(self):
+        self.proteins = {}
 
-        for line in open(filename):
+    @staticmethod
+    def getFromCountFile(countFilename):
+        retval = ExpressionData()
+
+        for line in open(countFilename):
             cols = line.split()
-            self.protein[cols[0]] = int(cols[1])
+            retval.set(cols[0], cols[1])
 
-    def proteins(self):
-        return self.protein.keys()
+        return retval
 
-    def has(self, protein):
-        return protein in self.protein
+    def getAllProteins(self):
+        return self.proteins.keys()
 
-    def get(self, protein):
-        return self.protein[protein]
+    def has(self, proteinName):
+        return proteinName in self.proteins
+
+    def get(self, proteinName):
+        return self.proteins[proteinName]
+
+    def set(self, proteinName, level):
+        self.proteins[proteinName] = int(level)
 
     def correct(self, scaleFactor):
-        for p in self.protein:
-            self.protein[p] /= scaleFactor
+        for proteinName in self.proteins:
+            self.proteins[proteinName] /= scaleFactor
 
 class Mutations:
     def __init__(self):
@@ -280,7 +289,7 @@ class Result:
             len(self.mutatedSet),
             self.significance)
 
-def getExpressionData(patientList, protein):
+def getExpressionDataForProtein(patientList, protein):
     expressionDataList = []
 
     hasData = False
@@ -330,8 +339,8 @@ def classifyByMutation(patients, proteinSet, mutationList):
             if not protein in PROTEINS_OF_INTEREST:
                 continue
 
-        (normalExpressions, normalHasData) = getExpressionData(normalPatients, protein)
-        (mutatedExpressions, mutatedHasData) = getExpressionData(mutatedPatients, protein)
+        (normalExpressions, normalHasData) = getExpressionDataForProtein(normalPatients, protein)
+        (mutatedExpressions, mutatedHasData) = getExpressionDataForProtein(mutatedPatients, protein)
 
         # If all expressions are 0 in both classes, ignore. (Invalid for mann-whitney u test)
         if not normalHasData and not mutatedHasData:
@@ -457,7 +466,7 @@ def main():
     # Generate the set of proteins for which at least one valid patient has expression data
     expressionProteinSet = set()
     for patient in patients.valid():
-        expressionProteinSet.update(patient.getExpressionData().proteins())
+        expressionProteinSet.update(patient.getExpressionData().getAllProteins())
 
     # Generate the set of mutations in at least one valid patient
     mutationSet = set()
