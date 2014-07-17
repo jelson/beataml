@@ -1,0 +1,896 @@
+Got expression data for 200, mutations for 196, both for 196
+Valid patients: 1408 mutations, expression data for 19990 proteins
+
+Mutation prevalence
+NPM1       54 patients, cumulative 54/196 (27.55%)
+DNMT3A     51 patients, cumulative 77/196 (39.29%)
+FLT3-ITD   39 patients, cumulative 95/196 (48.47%)
+IDH2       20 patients, cumulative 106/196 (54.08%)
+IDH1       19 patients, cumulative 109/196 (55.61%)
+RUNX1      18 patients, cumulative 117/196 (59.69%)
+FLT3       17 patients, cumulative 121/196 (61.73%)
+TET2       17 patients, cumulative 128/196 (65.31%)
+NRAS       15 patients, cumulative 133/196 (67.86%)
+TP53       15 patients, cumulative 145/196 (73.98%)
+CEBPA      13 patients, cumulative 149/196 (76.02%)
+WT1        12 patients, cumulative 151/196 (77.04%)
+PTPN11      9 patients, cumulative 153/196 (78.06%)
+KIT         8 patients, cumulative 158/196 (80.61%)
+KRAS        8 patients, cumulative 160/196 (81.63%)
+U2AF1       8 patients, cumulative 162/196 (82.65%)
+SMC1A       7 patients, cumulative 163/196 (83.16%)
+SMC3        7 patients, cumulative 164/196 (83.67%)
+TTN         7 patients, cumulative 165/196 (84.18%)
+MT-CYB      6 patients, cumulative 165/196 (84.18%)
+PHF6        6 patients, cumulative 166/196 (84.69%)
+STAG2       6 patients, cumulative 166/196 (84.69%)
+ASXL1       5 patients, cumulative 166/196 (84.69%)
+FAM5C       5 patients, cumulative 167/196 (85.20%)
+RAD21       5 patients, cumulative 168/196 (85.71%)
+---cutoff--- (mutations below are not considered)
+CSMD1       4 patients, cumulative 168/196 (85.71%)
+MT-ND5      4 patients, cumulative 168/196 (85.71%)
+PLCE1       4 patients, cumulative 169/196 (86.22%)
+CACNA1B     3 patients, cumulative 169/196 (86.22%)
+CACNA1E     3 patients, cumulative 170/196 (86.73%)
+COL12A1     3 patients, cumulative 170/196 (86.73%)
+CROCC       3 patients, cumulative 170/196 (86.73%)
+DIS3        3 patients, cumulative 171/196 (87.24%)
+DNAH9       3 patients, cumulative 171/196 (87.24%)
+EZH2        3 patients, cumulative 171/196 (87.24%)
+FCGBP       3 patients, cumulative 172/196 (87.76%)
+GBP4        3 patients, cumulative 172/196 (87.76%)
+GRIK2       3 patients, cumulative 173/196 (88.27%)
+KDM6A       3 patients, cumulative 174/196 (88.78%)
+MT-CO2      3 patients, cumulative 174/196 (88.78%)
+MT-CO3      3 patients, cumulative 174/196 (88.78%)
+MUC16       3 patients, cumulative 175/196 (89.29%)
+PHACTR1     3 patients, cumulative 175/196 (89.29%)
+PTPRT       3 patients, cumulative 175/196 (89.29%)
+SMG1        3 patients, cumulative 175/196 (89.29%)
+SPEN        3 patients, cumulative 175/196 (89.29%)
+SUZ12       3 patients, cumulative 175/196 (89.29%)
+ABTB1       2 patients, cumulative 175/196 (89.29%)
+ADAM11      2 patients, cumulative 176/196 (89.80%)
+APOB        2 patients, cumulative 176/196 (89.80%)
+ARAP2       2 patients, cumulative 176/196 (89.80%)
+ATP10B      2 patients, cumulative 176/196 (89.80%)
+BCOR        2 patients, cumulative 176/196 (89.80%)
+BMPER       2 patients, cumulative 176/196 (89.80%)
+BSN         2 patients, cumulative 176/196 (89.80%)
+C10orf28    2 patients, cumulative 176/196 (89.80%)
+C17orf97    2 patients, cumulative 177/196 (90.31%)
+CACNA2D3    2 patients, cumulative 177/196 (90.31%)
+CADM2       2 patients, cumulative 178/196 (90.82%)
+CADPS       2 patients, cumulative 178/196 (90.82%)
+CALR        2 patients, cumulative 179/196 (91.33%)
+CBFB        2 patients, cumulative 179/196 (91.33%)
+CBL         2 patients, cumulative 179/196 (91.33%)
+CD74        2 patients, cumulative 179/196 (91.33%)
+CECR2       2 patients, cumulative 179/196 (91.33%)
+CHD4        2 patients, cumulative 179/196 (91.33%)
+CLEC18B     2 patients, cumulative 179/196 (91.33%)
+CMYA5       2 patients, cumulative 179/196 (91.33%)
+CNTN5       2 patients, cumulative 179/196 (91.33%)
+CNTNAP4     2 patients, cumulative 179/196 (91.33%)
+CRISPLD1    2 patients, cumulative 180/196 (91.84%)
+CSMD3       2 patients, cumulative 180/196 (91.84%)
+CUL1        2 patients, cumulative 180/196 (91.84%)
+DCHS2       2 patients, cumulative 180/196 (91.84%)
+DCLK1       2 patients, cumulative 180/196 (91.84%)
+DDR2        2 patients, cumulative 181/196 (92.35%)
+DDX41       2 patients, cumulative 182/196 (92.86%)
+DLC1        2 patients, cumulative 182/196 (92.86%)
+DOCK2       2 patients, cumulative 182/196 (92.86%)
+DST         2 patients, cumulative 182/196 (92.86%)
+E2F8        2 patients, cumulative 182/196 (92.86%)
+EED         2 patients, cumulative 182/196 (92.86%)
+EGFR        2 patients, cumulative 182/196 (92.86%)
+EPPK1       2 patients, cumulative 182/196 (92.86%)
+ETV6        2 patients, cumulative 182/196 (92.86%)
+FAM154B     2 patients, cumulative 182/196 (92.86%)
+FAM40B      2 patients, cumulative 182/196 (92.86%)
+FAM57B      2 patients, cumulative 182/196 (92.86%)
+FAM65A      2 patients, cumulative 183/196 (93.37%)
+FLG         2 patients, cumulative 183/196 (93.37%)
+FRYL        2 patients, cumulative 183/196 (93.37%)
+GALNTL4     2 patients, cumulative 183/196 (93.37%)
+GATA2       2 patients, cumulative 183/196 (93.37%)
+GIGYF2      2 patients, cumulative 183/196 (93.37%)
+GJB3        2 patients, cumulative 183/196 (93.37%)
+GPR112      2 patients, cumulative 183/196 (93.37%)
+GRID1       2 patients, cumulative 183/196 (93.37%)
+GRIK4       2 patients, cumulative 183/196 (93.37%)
+GRM3        2 patients, cumulative 183/196 (93.37%)
+GRM8        2 patients, cumulative 183/196 (93.37%)
+GSTK1       2 patients, cumulative 183/196 (93.37%)
+HECW1       2 patients, cumulative 183/196 (93.37%)
+HNRNPK      2 patients, cumulative 183/196 (93.37%)
+ILDR1       2 patients, cumulative 183/196 (93.37%)
+KCNA4       2 patients, cumulative 184/196 (93.88%)
+KCNK13      2 patients, cumulative 184/196 (93.88%)
+KCNU1       2 patients, cumulative 184/196 (93.88%)
+KDM3B       2 patients, cumulative 184/196 (93.88%)
+KDR         2 patients, cumulative 184/196 (93.88%)
+KIAA0240    2 patients, cumulative 184/196 (93.88%)
+KIAA1683    2 patients, cumulative 184/196 (93.88%)
+KIF2B       2 patients, cumulative 184/196 (93.88%)
+LOC100129218  2 patients, cumulative 184/196 (93.88%)
+LOC100130211  2 patients, cumulative 184/196 (93.88%)
+LOC100132800  2 patients, cumulative 184/196 (93.88%)
+MAP2        2 patients, cumulative 184/196 (93.88%)
+MED12       2 patients, cumulative 184/196 (93.88%)
+MEFV        2 patients, cumulative 184/196 (93.88%)
+MT-CO1      2 patients, cumulative 185/196 (94.39%)
+MTA2        2 patients, cumulative 185/196 (94.39%)
+MTMR8       2 patients, cumulative 185/196 (94.39%)
+MTUS2       2 patients, cumulative 185/196 (94.39%)
+MUC5B       2 patients, cumulative 185/196 (94.39%)
+NF1         2 patients, cumulative 185/196 (94.39%)
+NMUR2       2 patients, cumulative 185/196 (94.39%)
+NR2E1       2 patients, cumulative 185/196 (94.39%)
+NRXN3       2 patients, cumulative 185/196 (94.39%)
+OR11H12     2 patients, cumulative 185/196 (94.39%)
+OR13H1      2 patients, cumulative 185/196 (94.39%)
+P2RY2       2 patients, cumulative 185/196 (94.39%)
+PDCD2L      2 patients, cumulative 185/196 (94.39%)
+PHIP        2 patients, cumulative 185/196 (94.39%)
+PKD1L2      2 patients, cumulative 185/196 (94.39%)
+PKHD1L1     2 patients, cumulative 185/196 (94.39%)
+PLEKHH1     2 patients, cumulative 186/196 (94.90%)
+PPP1R3A     2 patients, cumulative 186/196 (94.90%)
+PRAMEF2     2 patients, cumulative 186/196 (94.90%)
+PRPF8       2 patients, cumulative 186/196 (94.90%)
+PSME4       2 patients, cumulative 186/196 (94.90%)
+RBBP4       2 patients, cumulative 186/196 (94.90%)
+RIMS1       2 patients, cumulative 186/196 (94.90%)
+RNF213      2 patients, cumulative 186/196 (94.90%)
+RYR3        2 patients, cumulative 186/196 (94.90%)
+SCAF8       2 patients, cumulative 186/196 (94.90%)
+SCN1A       2 patients, cumulative 186/196 (94.90%)
+SEMA3A      2 patients, cumulative 186/196 (94.90%)
+SEMA4A      2 patients, cumulative 186/196 (94.90%)
+SETBP1      2 patients, cumulative 186/196 (94.90%)
+SI          2 patients, cumulative 186/196 (94.90%)
+STRN        2 patients, cumulative 186/196 (94.90%)
+TCEAL6      2 patients, cumulative 186/196 (94.90%)
+TET1        2 patients, cumulative 186/196 (94.90%)
+THRAP3      2 patients, cumulative 186/196 (94.90%)
+TNC         2 patients, cumulative 186/196 (94.90%)
+TOP3B       2 patients, cumulative 186/196 (94.90%)
+TRPM3       2 patients, cumulative 186/196 (94.90%)
+TTBK1       2 patients, cumulative 186/196 (94.90%)
+TUBA3C      2 patients, cumulative 186/196 (94.90%)
+UNC5B       2 patients, cumulative 186/196 (94.90%)
+WAC         2 patients, cumulative 186/196 (94.90%)
+ZBTB33      2 patients, cumulative 186/196 (94.90%)
+ZC3H18      2 patients, cumulative 186/196 (94.90%)
+ZNF687      2 patients, cumulative 186/196 (94.90%)
+  ('TTN', 'TET2'): mutated in only 0 patients
+  ('TTN', 'PTPN11'): mutated in only 0 patients
+  ('TTN', 'KRAS'): mutated in only 0 patients
+  ('TTN', 'WT1'): mutated in only 1 patients
+  ('TTN', 'MT-CYB'): mutated in only 0 patients
+  ('TTN', 'FLT3'): mutated in only 0 patients
+  ('TTN', 'IDH2'): mutated in only 1 patients
+  ('TTN', 'IDH1'): mutated in only 1 patients
+  ('TTN', 'TP53'): mutated in only 0 patients
+  ('TTN', 'NRAS'): mutated in only 0 patients
+  ('TTN', 'DNMT3A'): mutated in only 2 patients
+  ('TTN', 'RAD21'): mutated in only 0 patients
+  ('TTN', 'NPM1'): mutated in only 2 patients
+  ('TTN', 'SMC3'): mutated in only 1 patients
+  ('TTN', 'U2AF1'): mutated in only 0 patients
+  ('TTN', 'RUNX1'): mutated in only 3 patients
+  ('TTN', 'PHF6'): mutated in only 1 patients
+  ('TTN', 'ASXL1'): mutated in only 2 patients
+  ('TTN', 'SMC1A'): mutated in only 0 patients
+  ('TTN', 'CEBPA'): mutated in only 0 patients
+  ('TTN', 'KIT'): mutated in only 0 patients
+  ('TTN', 'FLT3-ITD'): mutated in only 2 patients
+  ('TTN', 'STAG2'): mutated in only 0 patients
+  ('TTN', 'FAM5C'): mutated in only 0 patients
+  ('TET2', 'PTPN11'): mutated in only 0 patients
+  ('TET2', 'KRAS'): mutated in only 1 patients
+  ('TET2', 'WT1'): mutated in only 0 patients
+  ('TET2', 'MT-CYB'): mutated in only 0 patients
+  ('TET2', 'FLT3'): mutated in only 1 patients
+  ('TET2', 'IDH2'): mutated in only 0 patients
+  ('TET2', 'IDH1'): mutated in only 2 patients
+  ('TET2', 'TP53'): mutated in only 1 patients
+  ('TET2', 'NRAS'): mutated in only 2 patients
+  ('TET2', 'RAD21'): mutated in only 0 patients
+  ('TET2', 'NPM1'): mutated in only 2 patients
+  ('TET2', 'SMC3'): mutated in only 1 patients
+  ('TET2', 'U2AF1'): mutated in only 1 patients
+  ('TET2', 'RUNX1'): mutated in only 2 patients
+  ('TET2', 'PHF6'): mutated in only 0 patients
+  ('TET2', 'ASXL1'): mutated in only 0 patients
+  ('TET2', 'SMC1A'): mutated in only 1 patients
+  ('TET2', 'CEBPA'): mutated in only 1 patients
+  ('TET2', 'KIT'): mutated in only 1 patients
+  ('TET2', 'FLT3-ITD'): mutated in only 4 patients
+  ('TET2', 'STAG2'): mutated in only 2 patients
+  ('TET2', 'FAM5C'): mutated in only 1 patients
+  ('PTPN11', 'KRAS'): mutated in only 0 patients
+  ('PTPN11', 'WT1'): mutated in only 1 patients
+  ('PTPN11', 'MT-CYB'): mutated in only 1 patients
+  ('PTPN11', 'FLT3'): mutated in only 1 patients
+  ('PTPN11', 'IDH2'): mutated in only 0 patients
+  ('PTPN11', 'IDH1'): mutated in only 2 patients
+  ('PTPN11', 'TP53'): mutated in only 1 patients
+  ('PTPN11', 'NRAS'): mutated in only 1 patients
+  ('PTPN11', 'DNMT3A'): mutated in only 3 patients
+  ('PTPN11', 'RAD21'): mutated in only 0 patients
+  ('PTPN11', 'SMC3'): mutated in only 1 patients
+  ('PTPN11', 'U2AF1'): mutated in only 0 patients
+  ('PTPN11', 'RUNX1'): mutated in only 0 patients
+  ('PTPN11', 'PHF6'): mutated in only 1 patients
+  ('PTPN11', 'ASXL1'): mutated in only 0 patients
+  ('PTPN11', 'SMC1A'): mutated in only 1 patients
+  ('PTPN11', 'CEBPA'): mutated in only 1 patients
+  ('PTPN11', 'KIT'): mutated in only 0 patients
+  ('PTPN11', 'FLT3-ITD'): mutated in only 1 patients
+  ('PTPN11', 'STAG2'): mutated in only 2 patients
+  ('PTPN11', 'FAM5C'): mutated in only 0 patients
+  ('KRAS', 'WT1'): mutated in only 0 patients
+  ('KRAS', 'MT-CYB'): mutated in only 0 patients
+  ('KRAS', 'FLT3'): mutated in only 0 patients
+  ('KRAS', 'IDH2'): mutated in only 3 patients
+  ('KRAS', 'IDH1'): mutated in only 0 patients
+  ('KRAS', 'TP53'): mutated in only 0 patients
+  ('KRAS', 'NRAS'): mutated in only 0 patients
+  ('KRAS', 'DNMT3A'): mutated in only 4 patients
+  ('KRAS', 'RAD21'): mutated in only 0 patients
+  ('KRAS', 'NPM1'): mutated in only 3 patients
+  ('KRAS', 'SMC3'): mutated in only 0 patients
+  ('KRAS', 'U2AF1'): mutated in only 1 patients
+  ('KRAS', 'RUNX1'): mutated in only 1 patients
+  ('KRAS', 'PHF6'): mutated in only 0 patients
+  ('KRAS', 'ASXL1'): mutated in only 1 patients
+  ('KRAS', 'SMC1A'): mutated in only 0 patients
+  ('KRAS', 'CEBPA'): mutated in only 0 patients
+  ('KRAS', 'KIT'): mutated in only 0 patients
+  ('KRAS', 'FLT3-ITD'): mutated in only 0 patients
+  ('KRAS', 'STAG2'): mutated in only 0 patients
+  ('KRAS', 'FAM5C'): mutated in only 0 patients
+  ('WT1', 'MT-CYB'): mutated in only 0 patients
+  ('WT1', 'FLT3'): mutated in only 0 patients
+  ('WT1', 'IDH2'): mutated in only 1 patients
+  ('WT1', 'IDH1'): mutated in only 1 patients
+  ('WT1', 'TP53'): mutated in only 0 patients
+  ('WT1', 'NRAS'): mutated in only 1 patients
+  ('WT1', 'DNMT3A'): mutated in only 2 patients
+  ('WT1', 'RAD21'): mutated in only 0 patients
+  ('WT1', 'SMC3'): mutated in only 1 patients
+  ('WT1', 'U2AF1'): mutated in only 0 patients
+  ('WT1', 'RUNX1'): mutated in only 2 patients
+  ('WT1', 'PHF6'): mutated in only 2 patients
+  ('WT1', 'ASXL1'): mutated in only 0 patients
+  ('WT1', 'SMC1A'): mutated in only 1 patients
+  ('WT1', 'CEBPA'): mutated in only 2 patients
+  ('WT1', 'KIT'): mutated in only 1 patients
+  ('WT1', 'STAG2'): mutated in only 1 patients
+  ('WT1', 'FAM5C'): mutated in only 1 patients
+  ('MT-CYB', 'FLT3'): mutated in only 1 patients
+  ('MT-CYB', 'IDH2'): mutated in only 1 patients
+  ('MT-CYB', 'IDH1'): mutated in only 1 patients
+  ('MT-CYB', 'TP53'): mutated in only 1 patients
+  ('MT-CYB', 'NRAS'): mutated in only 0 patients
+  ('MT-CYB', 'DNMT3A'): mutated in only 4 patients
+  ('MT-CYB', 'RAD21'): mutated in only 0 patients
+  ('MT-CYB', 'NPM1'): mutated in only 3 patients
+  ('MT-CYB', 'SMC3'): mutated in only 0 patients
+  ('MT-CYB', 'U2AF1'): mutated in only 0 patients
+  ('MT-CYB', 'RUNX1'): mutated in only 0 patients
+  ('MT-CYB', 'PHF6'): mutated in only 0 patients
+  ('MT-CYB', 'ASXL1'): mutated in only 0 patients
+  ('MT-CYB', 'SMC1A'): mutated in only 1 patients
+  ('MT-CYB', 'CEBPA'): mutated in only 1 patients
+  ('MT-CYB', 'KIT'): mutated in only 0 patients
+  ('MT-CYB', 'FLT3-ITD'): mutated in only 1 patients
+  ('MT-CYB', 'STAG2'): mutated in only 0 patients
+  ('MT-CYB', 'FAM5C'): mutated in only 0 patients
+  ('FLT3', 'IDH2'): mutated in only 0 patients
+  ('FLT3', 'IDH1'): mutated in only 4 patients
+  ('FLT3', 'TP53'): mutated in only 0 patients
+  ('FLT3', 'NRAS'): mutated in only 1 patients
+  ('FLT3', 'RAD21'): mutated in only 1 patients
+  ('FLT3', 'SMC3'): mutated in only 1 patients
+  ('FLT3', 'U2AF1'): mutated in only 0 patients
+  ('FLT3', 'RUNX1'): mutated in only 0 patients
+  ('FLT3', 'PHF6'): mutated in only 0 patients
+  ('FLT3', 'ASXL1'): mutated in only 0 patients
+  ('FLT3', 'SMC1A'): mutated in only 3 patients
+  ('FLT3', 'CEBPA'): mutated in only 1 patients
+  ('FLT3', 'KIT'): mutated in only 1 patients
+  ('FLT3', 'FLT3-ITD'): mutated in only 0 patients
+  ('FLT3', 'STAG2'): mutated in only 0 patients
+  ('FLT3', 'FAM5C'): mutated in only 0 patients
+  ('IDH2', 'IDH1'): mutated in only 1 patients
+  ('IDH2', 'TP53'): mutated in only 0 patients
+  ('IDH2', 'NRAS'): mutated in only 0 patients
+  ('IDH2', 'RAD21'): mutated in only 0 patients
+  ('IDH2', 'NPM1'): mutated in only 4 patients
+  ('IDH2', 'SMC3'): mutated in only 0 patients
+  ('IDH2', 'U2AF1'): mutated in only 1 patients
+  ('IDH2', 'PHF6'): mutated in only 1 patients
+  ('IDH2', 'ASXL1'): mutated in only 4 patients
+  ('IDH2', 'SMC1A'): mutated in only 0 patients
+  ('IDH2', 'CEBPA'): mutated in only 1 patients
+  ('IDH2', 'KIT'): mutated in only 0 patients
+  ('IDH2', 'FLT3-ITD'): mutated in only 2 patients
+  ('IDH2', 'STAG2'): mutated in only 1 patients
+  ('IDH2', 'FAM5C'): mutated in only 0 patients
+  ('IDH1', 'TP53'): mutated in only 0 patients
+  ('IDH1', 'NRAS'): mutated in only 2 patients
+  ('IDH1', 'RAD21'): mutated in only 0 patients
+  ('IDH1', 'SMC3'): mutated in only 0 patients
+  ('IDH1', 'U2AF1'): mutated in only 1 patients
+  ('IDH1', 'RUNX1'): mutated in only 2 patients
+  ('IDH1', 'PHF6'): mutated in only 0 patients
+  ('IDH1', 'ASXL1'): mutated in only 1 patients
+  ('IDH1', 'SMC1A'): mutated in only 1 patients
+  ('IDH1', 'CEBPA'): mutated in only 1 patients
+  ('IDH1', 'KIT'): mutated in only 1 patients
+  ('IDH1', 'FLT3-ITD'): mutated in only 0 patients
+  ('IDH1', 'STAG2'): mutated in only 0 patients
+  ('IDH1', 'FAM5C'): mutated in only 0 patients
+  ('TP53', 'NRAS'): mutated in only 1 patients
+  ('TP53', 'DNMT3A'): mutated in only 2 patients
+  ('TP53', 'RAD21'): mutated in only 0 patients
+  ('TP53', 'NPM1'): mutated in only 0 patients
+  ('TP53', 'SMC3'): mutated in only 1 patients
+  ('TP53', 'U2AF1'): mutated in only 0 patients
+  ('TP53', 'RUNX1'): mutated in only 0 patients
+  ('TP53', 'PHF6'): mutated in only 0 patients
+  ('TP53', 'ASXL1'): mutated in only 0 patients
+  ('TP53', 'SMC1A'): mutated in only 0 patients
+  ('TP53', 'CEBPA'): mutated in only 1 patients
+  ('TP53', 'KIT'): mutated in only 0 patients
+  ('TP53', 'FLT3-ITD'): mutated in only 0 patients
+  ('TP53', 'STAG2'): mutated in only 0 patients
+  ('TP53', 'FAM5C'): mutated in only 0 patients
+  ('NRAS', 'RAD21'): mutated in only 1 patients
+  ('NRAS', 'SMC3'): mutated in only 1 patients
+  ('NRAS', 'U2AF1'): mutated in only 1 patients
+  ('NRAS', 'RUNX1'): mutated in only 1 patients
+  ('NRAS', 'PHF6'): mutated in only 0 patients
+  ('NRAS', 'ASXL1'): mutated in only 0 patients
+  ('NRAS', 'SMC1A'): mutated in only 0 patients
+  ('NRAS', 'CEBPA'): mutated in only 3 patients
+  ('NRAS', 'KIT'): mutated in only 0 patients
+  ('NRAS', 'FLT3-ITD'): mutated in only 1 patients
+  ('NRAS', 'STAG2'): mutated in only 1 patients
+  ('NRAS', 'FAM5C'): mutated in only 1 patients
+  ('DNMT3A', 'RAD21'): mutated in only 3 patients
+  ('DNMT3A', 'U2AF1'): mutated in only 3 patients
+  ('DNMT3A', 'RUNX1'): mutated in only 2 patients
+  ('DNMT3A', 'PHF6'): mutated in only 1 patients
+  ('DNMT3A', 'ASXL1'): mutated in only 1 patients
+  ('DNMT3A', 'SMC1A'): mutated in only 3 patients
+  ('DNMT3A', 'CEBPA'): mutated in only 3 patients
+  ('DNMT3A', 'KIT'): mutated in only 1 patients
+  ('DNMT3A', 'STAG2'): mutated in only 0 patients
+  ('DNMT3A', 'FAM5C'): mutated in only 1 patients
+  ('RAD21', 'NPM1'): mutated in only 3 patients
+  ('RAD21', 'SMC3'): mutated in only 0 patients
+  ('RAD21', 'U2AF1'): mutated in only 0 patients
+  ('RAD21', 'RUNX1'): mutated in only 0 patients
+  ('RAD21', 'PHF6'): mutated in only 0 patients
+  ('RAD21', 'ASXL1'): mutated in only 0 patients
+  ('RAD21', 'SMC1A'): mutated in only 0 patients
+  ('RAD21', 'CEBPA'): mutated in only 0 patients
+  ('RAD21', 'KIT'): mutated in only 0 patients
+  ('RAD21', 'FLT3-ITD'): mutated in only 1 patients
+  ('RAD21', 'STAG2'): mutated in only 0 patients
+  ('RAD21', 'FAM5C'): mutated in only 0 patients
+  ('NPM1', 'SMC3'): mutated in only 3 patients
+  ('NPM1', 'U2AF1'): mutated in only 1 patients
+  ('NPM1', 'RUNX1'): mutated in only 0 patients
+  ('NPM1', 'PHF6'): mutated in only 1 patients
+  ('NPM1', 'ASXL1'): mutated in only 0 patients
+  ('NPM1', 'SMC1A'): mutated in only 4 patients
+  ('NPM1', 'CEBPA'): mutated in only 2 patients
+  ('NPM1', 'KIT'): mutated in only 1 patients
+  ('NPM1', 'STAG2'): mutated in only 3 patients
+  ('NPM1', 'FAM5C'): mutated in only 2 patients
+  ('SMC3', 'U2AF1'): mutated in only 1 patients
+  ('SMC3', 'RUNX1'): mutated in only 1 patients
+  ('SMC3', 'PHF6'): mutated in only 1 patients
+  ('SMC3', 'ASXL1'): mutated in only 0 patients
+  ('SMC3', 'SMC1A'): mutated in only 0 patients
+  ('SMC3', 'CEBPA'): mutated in only 1 patients
+  ('SMC3', 'KIT'): mutated in only 0 patients
+  ('SMC3', 'FLT3-ITD'): mutated in only 2 patients
+  ('SMC3', 'STAG2'): mutated in only 0 patients
+  ('SMC3', 'FAM5C'): mutated in only 0 patients
+  ('U2AF1', 'RUNX1'): mutated in only 2 patients
+  ('U2AF1', 'PHF6'): mutated in only 1 patients
+  ('U2AF1', 'ASXL1'): mutated in only 1 patients
+  ('U2AF1', 'SMC1A'): mutated in only 0 patients
+  ('U2AF1', 'CEBPA'): mutated in only 0 patients
+  ('U2AF1', 'KIT'): mutated in only 1 patients
+  ('U2AF1', 'FLT3-ITD'): mutated in only 0 patients
+  ('U2AF1', 'STAG2'): mutated in only 0 patients
+  ('U2AF1', 'FAM5C'): mutated in only 0 patients
+  ('RUNX1', 'PHF6'): mutated in only 3 patients
+  ('RUNX1', 'ASXL1'): mutated in only 4 patients
+  ('RUNX1', 'SMC1A'): mutated in only 0 patients
+  ('RUNX1', 'CEBPA'): mutated in only 0 patients
+  ('RUNX1', 'KIT'): mutated in only 0 patients
+  ('RUNX1', 'FLT3-ITD'): mutated in only 1 patients
+  ('RUNX1', 'STAG2'): mutated in only 2 patients
+  ('RUNX1', 'FAM5C'): mutated in only 0 patients
+  ('PHF6', 'ASXL1'): mutated in only 0 patients
+  ('PHF6', 'SMC1A'): mutated in only 0 patients
+  ('PHF6', 'CEBPA'): mutated in only 0 patients
+  ('PHF6', 'KIT'): mutated in only 0 patients
+  ('PHF6', 'FLT3-ITD'): mutated in only 1 patients
+  ('PHF6', 'STAG2'): mutated in only 0 patients
+  ('PHF6', 'FAM5C'): mutated in only 1 patients
+  ('ASXL1', 'SMC1A'): mutated in only 0 patients
+  ('ASXL1', 'CEBPA'): mutated in only 0 patients
+  ('ASXL1', 'KIT'): mutated in only 0 patients
+  ('ASXL1', 'FLT3-ITD'): mutated in only 0 patients
+  ('ASXL1', 'STAG2'): mutated in only 0 patients
+  ('ASXL1', 'FAM5C'): mutated in only 0 patients
+  ('SMC1A', 'CEBPA'): mutated in only 1 patients
+  ('SMC1A', 'KIT'): mutated in only 0 patients
+  ('SMC1A', 'FLT3-ITD'): mutated in only 1 patients
+  ('SMC1A', 'STAG2'): mutated in only 0 patients
+  ('SMC1A', 'FAM5C'): mutated in only 0 patients
+  ('CEBPA', 'KIT'): mutated in only 0 patients
+  ('CEBPA', 'FLT3-ITD'): mutated in only 1 patients
+  ('CEBPA', 'STAG2'): mutated in only 0 patients
+  ('CEBPA', 'FAM5C'): mutated in only 0 patients
+  ('KIT', 'FLT3-ITD'): mutated in only 0 patients
+  ('KIT', 'STAG2'): mutated in only 0 patients
+  ('KIT', 'FAM5C'): mutated in only 0 patients
+  ('FLT3-ITD', 'STAG2'): mutated in only 2 patients
+  ('FLT3-ITD', 'FAM5C'): mutated in only 3 patients
+  ('STAG2', 'FAM5C'): mutated in only 0 patients
+           NPM1:           WNT7B     0.03 +/-     0.13  -->      1.45 +/-     1.54, n=48, p=0.000000
+           NPM1:           HOXB4     5.99 +/-     8.21  -->     34.47 +/-    14.33, n=48, p=0.000000
+           NPM1:           HOXB3     8.93 +/-    13.75  -->     61.52 +/-    26.51, n=48, p=0.000000
+           NPM1:           HOXB9     0.68 +/-     4.63  -->     13.84 +/-    35.79, n=48, p=0.000000
+           NPM1:           HOXA5    10.59 +/-    15.55  -->     62.28 +/-    27.37, n=48, p=0.000000
+           NPM1:            PBX3    16.87 +/-    19.39  -->     64.93 +/-    22.46, n=48, p=0.000000
+           NPM1:           HOXB6     1.52 +/-     4.04  -->     13.09 +/-     7.29, n=48, p=0.000000
+           NPM1:           HOXB2     5.62 +/-     6.65  -->     25.03 +/-    11.75, n=48, p=0.000000
+           NPM1:           HOXB5     1.92 +/-     3.93  -->     14.27 +/-    10.35, n=48, p=0.000000
+           NPM1:           HOXB8     1.32 +/-     9.65  -->      7.49 +/-    14.80, n=48, p=0.000000
+           NPM1:           HOXA6     6.86 +/-    10.66  -->     35.78 +/-    15.51, n=48, p=0.000000
+           NPM1:           HOXB7     0.69 +/-     3.33  -->      5.21 +/-     7.67, n=48, p=0.000000
+           NPM1:           HOXA3     3.79 +/-     5.80  -->     17.26 +/-     6.21, n=48, p=0.000000
+           NPM1:           HOXA4     3.17 +/-     4.77  -->     14.90 +/-     8.01, n=48, p=0.000000
+           NPM1:           HOXA7     6.85 +/-     9.02  -->     28.62 +/-    11.49, n=48, p=0.000000
+           NPM1:           LMX1B     0.05 +/-     0.34  -->      0.76 +/-     1.48, n=48, p=0.000000
+           NPM1:          NKX2-3     1.66 +/-     4.28  -->     10.24 +/-     6.44, n=48, p=0.000000
+           NPM1:           C1QL1     0.03 +/-     0.06  -->      0.83 +/-     1.21, n=48, p=0.000000
+           NPM1:            SDSL     4.36 +/-     3.11  -->     11.40 +/-     4.45, n=48, p=0.000000
+           NPM1:          HOXA10     9.07 +/-    11.63  -->     28.85 +/-    12.08, n=48, p=0.000000
+           NPM1:       HOXA11-AS     0.66 +/-     3.65  -->      2.71 +/-     3.86, n=48, p=0.000000
+           NPM1:           HOXA9    25.17 +/-    31.18  -->     90.06 +/-    45.44, n=48, p=0.000000
+         MT-CYB:          OR5B17     0.00 +/-     0.00  -->      0.02 +/-     0.02, n= 5, p=0.000000
+           NPM1:         ONECUT3     0.00 +/-     0.02  -->      0.47 +/-     1.65, n=48, p=0.000000
+           NPM1:             TRH    62.03 +/-   207.69  -->      1.07 +/-     3.83, n=48, p=0.000000
+           NPM1:       C10orf140     0.99 +/-     2.27  -->      4.57 +/-     3.17, n=48, p=0.000000
+           NPM1:    LOC100271722     2.82 +/-     3.46  -->     11.06 +/-     6.35, n=48, p=0.000000
+           NPM1:         FAM105A    20.89 +/-    17.64  -->      4.73 +/-     7.56, n=48, p=0.000000
+           NPM1:          HOXA11     0.99 +/-     4.75  -->      3.60 +/-     5.71, n=48, p=0.000000
+           NPM1:           MEIS1    10.15 +/-    12.02  -->     31.31 +/-    12.95, n=48, p=0.000000
+           NPM1:           SPARC    54.70 +/-    52.54  -->      9.26 +/-    12.79, n=48, p=0.000000
+           NPM1:            GNG7     8.37 +/-     4.98  -->      2.69 +/-     2.11, n=48, p=0.000000
+           NPM1:         C2orf65     3.08 +/-     2.34  -->      0.95 +/-     0.98, n=48, p=0.000000
+           NPM1:          TMIGD2    10.84 +/-    10.14  -->      1.28 +/-     1.92, n=48, p=0.000000
+       FLT3-ITD:          FAM47E     0.27 +/-     0.84  -->      2.59 +/-     2.95, n=37, p=0.000000
+           NPM1:           HOXA2     0.98 +/-     1.41  -->      3.84 +/-     2.70, n=48, p=0.000000
+           NPM1:            NCR2     0.16 +/-     0.90  -->      7.38 +/-    21.50, n=48, p=0.000000
+  NPM1+FLT3-ITD:           FGF10     0.30 +/-     1.34  -->      5.67 +/-     6.54, n=19, p=0.000000
+           NPM1:          TSPAN7    12.69 +/-    17.03  -->      0.42 +/-     0.59, n=48, p=0.000000
+           NPM1:           PDGFD     1.66 +/-     2.25  -->      5.55 +/-     3.54, n=48, p=0.000000
+           NPM1:           BAALC    38.12 +/-    55.23  -->      1.46 +/-     1.91, n=48, p=0.000000
+           NPM1:          DLGAP2     0.54 +/-     1.36  -->      0.01 +/-     0.02, n=48, p=0.000000
+           NPM1:           NPTX1     0.16 +/-     0.41  -->      2.03 +/-     5.39, n=48, p=0.000000
+           NPM1:          CT45A5     0.51 +/-     2.82  -->      3.32 +/-     5.88, n=48, p=0.000000
+           NPM1:          POU6F1     3.07 +/-     1.71  -->      1.22 +/-     0.95, n=48, p=0.000000
+           NPM1:            GYPC    38.46 +/-    25.82  -->     11.74 +/-    11.55, n=48, p=0.000000
+           NPM1:         RPS6KA2     5.75 +/-     5.67  -->      1.05 +/-     0.93, n=48, p=0.000000
+           NPM1:        C22orf26     1.23 +/-     0.92  -->      2.90 +/-     1.36, n=48, p=0.000000
+           NPM1:           CDCA7    45.16 +/-    24.61  -->     16.18 +/-    13.39, n=48, p=0.000000
+           NPM1:            NRP1     1.98 +/-     3.13  -->      0.23 +/-     0.59, n=48, p=0.000000
+           NPM1:        MAP1LC3A     1.97 +/-     2.96  -->      5.35 +/-     6.36, n=48, p=0.000000
+           NPM1:          MAN1A1    60.11 +/-    57.78  -->     15.60 +/-    10.32, n=48, p=0.000000
+           NPM1:    LOC100133669     0.47 +/-     0.57  -->      0.07 +/-     0.13, n=48, p=0.000000
+       FLT3-ITD:          TRIM16     1.48 +/-     2.07  -->      5.06 +/-     4.12, n=37, p=0.000000
+           NPM1:       LOC441204     1.06 +/-     1.23  -->      3.08 +/-     1.70, n=48, p=0.000000
+           NPM1:           CD200    23.46 +/-    20.13  -->      4.57 +/-     8.77, n=48, p=0.000000
+           NPM1:         SLC10A2     2.24 +/-    16.21  -->      1.09 +/-     4.33, n=48, p=0.000000
+           NPM1:             APP    60.18 +/-    52.88  -->      9.47 +/-    21.78, n=48, p=0.000000
+           NPM1:           PHKA2    17.47 +/-     4.62  -->     28.24 +/-    10.71, n=48, p=0.000000
+           NPM1:             LY9     7.49 +/-     5.41  -->      2.63 +/-     2.45, n=48, p=0.000000
+           NPM1:        PPARGC1A     0.61 +/-     1.85  -->      2.27 +/-     2.30, n=48, p=0.000000
+           NPM1:           FGF10     0.08 +/-     0.60  -->      3.00 +/-     5.08, n=48, p=0.000000
+           NPM1:         FAM134B     3.57 +/-     3.56  -->      0.79 +/-     1.10, n=48, p=0.000001
+           NPM1:           MLLT3     6.64 +/-     7.15  -->      1.69 +/-     3.48, n=48, p=0.000001
+           NPM1:        PPP1R14A     1.93 +/-     3.63  -->      0.11 +/-     0.16, n=48, p=0.000001
+           NPM1:           HOXA1     0.66 +/-     0.63  -->      1.86 +/-     1.02, n=48, p=0.000001
+           NPM1:           CPNE8     7.65 +/-     7.71  -->     18.24 +/-     5.80, n=48, p=0.000001
+           NPM1:           ITM2C   139.88 +/-   102.50  -->     48.00 +/-    50.75, n=48, p=0.000001
+           NPM1:           FGFR1     8.81 +/-    11.40  -->      1.09 +/-     0.82, n=48, p=0.000001
+           NPM1:          SH3RF1     6.75 +/-     4.08  -->      3.42 +/-     1.37, n=48, p=0.000001
+           NPM1:            NAV1     5.55 +/-     5.69  -->      1.35 +/-     1.99, n=48, p=0.000001
+           NPM1:         CCDC74A     0.28 +/-     0.73  -->      0.96 +/-     0.96, n=48, p=0.000001
+           NPM1:          DUSP27     2.31 +/-     3.06  -->      0.21 +/-     0.72, n=48, p=0.000001
+           NPM1:           SMAGP     3.73 +/-     2.91  -->      1.40 +/-     0.59, n=48, p=0.000001
+           KRAS:          OR10A6     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 7, p=0.000002
+          SMC1A:        C21orf54     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 7, p=0.000002
+      FLT3+NPM1:        C21orf54     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 7, p=0.000002
+           NPM1:        ADAMTS10     7.28 +/-     8.23  -->      1.39 +/-     1.84, n=48, p=0.000002
+           NPM1:             NOG     8.57 +/-    10.49  -->      1.50 +/-     2.76, n=48, p=0.000002
+           NPM1:            CD34   143.11 +/-   160.26  -->     18.57 +/-    55.20, n=48, p=0.000002
+           NPM1:            GNG2    18.09 +/-    10.16  -->      7.31 +/-     7.62, n=48, p=0.000002
+           NPM1:           HOXB1     0.02 +/-     0.07  -->      0.14 +/-     0.23, n=48, p=0.000002
+           NPM1:         HSD17B4    37.95 +/-    13.75  -->     57.66 +/-    21.82, n=48, p=0.000003
+           NPM1:             HGF    48.19 +/-    82.47  -->      5.54 +/-     5.16, n=48, p=0.000004
+           NPM1:       LOC201651     0.11 +/-     0.31  -->      1.22 +/-     3.27, n=48, p=0.000004
+           NPM1:            HES4     0.37 +/-     0.66  -->      2.94 +/-     9.09, n=48, p=0.000004
+           NPM1:           SORL1    72.05 +/-    40.72  -->     31.82 +/-    16.44, n=48, p=0.000005
+           NPM1:          KIRREL     1.35 +/-     1.99  -->      0.12 +/-     0.30, n=48, p=0.000005
+           NPM1:            DDI1     0.20 +/-     0.29  -->      0.57 +/-     0.44, n=48, p=0.000005
+           NPM1:          SFMBT2     7.39 +/-     4.56  -->      3.04 +/-     2.35, n=48, p=0.000006
+           NPM1:          ZNF595     4.49 +/-     4.50  -->      0.89 +/-     1.29, n=48, p=0.000007
+    DNMT3A+NPM1:           WNT7B     0.24 +/-     0.72  -->      1.59 +/-     1.75, n=23, p=0.000008
+           NPM1:            SDK2     6.47 +/-    10.50  -->      0.30 +/-     0.34, n=48, p=0.000008
+           NPM1:         C1orf59    21.64 +/-    12.72  -->      9.55 +/-     5.38, n=48, p=0.000008
+           NPM1:           PDE3B    13.94 +/-     8.01  -->      6.46 +/-     3.77, n=48, p=0.000009
+           NPM1:            TSLP     0.26 +/-     0.49  -->      1.19 +/-     1.71, n=48, p=0.000009
+           NPM1:          ORMDL2    11.65 +/-     2.83  -->     15.54 +/-     3.40, n=48, p=0.000009
+           NPM1:           C2CD2     8.39 +/-     4.53  -->      4.18 +/-     1.93, n=48, p=0.000009
+           NPM1:        ARHGEF10     1.52 +/-     2.08  -->      0.31 +/-     0.35, n=48, p=0.000011
+           NPM1:            DLG2     0.10 +/-     0.11  -->      0.04 +/-     0.05, n=48, p=0.000011
+           TP53:          TMEM8C     0.00 +/-     0.01  -->      0.03 +/-     0.06, n=14, p=0.000013
+         MT-CYB:           LYZL1     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.000014
+           NPM1:          HOXA13     0.05 +/-     0.26  -->      0.89 +/-     2.44, n=48, p=0.000014
+           NPM1:          FCHSD2    37.27 +/-    12.39  -->     25.71 +/-     5.51, n=48, p=0.000015
+           NPM1:            ANKH     7.69 +/-     3.27  -->      4.22 +/-     1.88, n=48, p=0.000015
+           NPM1:           DHRS3     6.29 +/-     6.72  -->      1.30 +/-     1.31, n=48, p=0.000015
+           NPM1:           ITGB4     1.46 +/-     2.73  -->      0.33 +/-     0.40, n=48, p=0.000016
+           NPM1:          NKAIN4     0.10 +/-     1.00  -->      0.06 +/-     0.19, n=48, p=0.000018
+           NPM1:           CREG1   102.20 +/-    34.68  -->    147.17 +/-    36.39, n=48, p=0.000022
+           NPM1:           FARP1     1.07 +/-     1.62  -->      0.25 +/-     0.20, n=48, p=0.000022
+           NPM1:        C6orf145     0.97 +/-     1.28  -->      0.18 +/-     0.19, n=48, p=0.000022
+           NPM1:           LRRC2     0.34 +/-     0.54  -->      0.06 +/-     0.11, n=48, p=0.000023
+           NPM1:            CNN2    83.96 +/-    35.57  -->     46.32 +/-    23.48, n=48, p=0.000024
+           NPM1:          SEC16B     1.17 +/-     1.04  -->      2.51 +/-     1.18, n=48, p=0.000025
+           NPM1:        MGC16121     2.39 +/-     3.84  -->      0.31 +/-     1.35, n=48, p=0.000027
+           NPM1:         CYP46A1     0.84 +/-     1.85  -->      0.04 +/-     0.05, n=48, p=0.000027
+           NPM1:        TP53INP2     9.38 +/-    20.11  -->     39.04 +/-    53.13, n=48, p=0.000028
+       FLT3-ITD:         CYSLTR2     2.76 +/-     3.55  -->     11.85 +/-    12.02, n=37, p=0.000029
+           NPM1:           STAC3    10.80 +/-     6.52  -->     20.40 +/-     8.50, n=48, p=0.000029
+           NPM1:           UGGT2     1.07 +/-     1.71  -->      3.82 +/-     2.31, n=48, p=0.000030
+           NPM1:           CCL23     6.21 +/-    16.70  -->     19.29 +/-    24.09, n=48, p=0.000031
+           NPM1:          HOMER2     5.08 +/-     5.24  -->      1.15 +/-     1.15, n=48, p=0.000031
+           NPM1:          RAD23B    35.38 +/-     9.29  -->     25.23 +/-     6.83, n=48, p=0.000034
+           NPM1:           P4HA1    17.19 +/-     5.96  -->     24.33 +/-     6.84, n=48, p=0.000036
+           NPM1:            CUX2     0.79 +/-     1.37  -->      0.05 +/-     0.08, n=48, p=0.000036
+  NPM1+FLT3-ITD:         SLCO1B3     0.01 +/-     0.05  -->      0.14 +/-     0.29, n=19, p=0.000039
+           NPM1:          LYSMD4     5.59 +/-     1.99  -->      3.52 +/-     1.04, n=48, p=0.000045
+           NPM1:            MAFA     0.03 +/-     0.05  -->      0.18 +/-     0.24, n=48, p=0.000046
+           NPM1:        PRICKLE1     3.50 +/-     4.20  -->      8.12 +/-     4.88, n=48, p=0.000048
+       FLT3-ITD:         SLC17A2     0.02 +/-     0.13  -->      1.66 +/-     6.06, n=37, p=0.000049
+    DNMT3A+NPM1:           LMX1B     0.15 +/-     0.74  -->      0.86 +/-     1.37, n=23, p=0.000049
+           NPM1:           SNX10    17.40 +/-    14.87  -->     33.66 +/-    15.92, n=48, p=0.000050
+           NPM1:            NRG4     4.97 +/-     6.73  -->     10.43 +/-     5.13, n=48, p=0.000050
+           NPM1:         RAB3IL1     2.10 +/-     2.70  -->      0.46 +/-     0.76, n=48, p=0.000053
+           NPM1:         PLA2G4A     7.81 +/-     4.78  -->     14.96 +/-     6.49, n=48, p=0.000055
+           NPM1:         C3orf65     2.81 +/-     1.80  -->      6.22 +/-     3.54, n=48, p=0.000056
+    DNMT3A+NPM1:          CT45A5     0.95 +/-     3.59  -->      3.44 +/-     6.12, n=23, p=0.000056
+           NPM1:          TMEM65     7.88 +/-     4.91  -->     16.45 +/-    11.70, n=48, p=0.000058
+       FLT3-ITD:          S100A1     3.33 +/-     3.62  -->      9.21 +/-     8.33, n=37, p=0.000061
+           NPM1:         FAM159A     3.18 +/-     2.82  -->      1.06 +/-     1.33, n=48, p=0.000062
+           NPM1:         IGF2BP2    32.54 +/-    15.76  -->     53.53 +/-    17.77, n=48, p=0.000064
+           NPM1:             CAT   259.03 +/-   195.06  -->    497.02 +/-   252.36, n=48, p=0.000065
+           NPM1:         CACNA1C     0.81 +/-     0.90  -->      0.21 +/-     0.17, n=48, p=0.000068
+           NPM1:           USP40     6.36 +/-     2.29  -->      9.46 +/-     2.65, n=48, p=0.000071
+           NPM1:        MARVELD2     0.39 +/-     0.56  -->      1.33 +/-     1.13, n=48, p=0.000073
+            TTN:       C14orf177     0.00 +/-     0.00  -->      0.02 +/-     0.03, n= 6, p=0.000074
+           NPM1:            HRH3     0.04 +/-     0.06  -->      0.15 +/-     0.15, n=48, p=0.000085
+           NPM1:          DLGAP3     1.34 +/-     2.49  -->      0.32 +/-     0.72, n=48, p=0.000096
+           NPM1:            MPP7     3.45 +/-     3.32  -->      8.01 +/-     5.56, n=48, p=0.000096
+           NPM1:             BID    19.86 +/-     4.87  -->     27.11 +/-     6.95, n=48, p=0.000098
+           NPM1:          ABHD11     3.61 +/-     2.36  -->      5.94 +/-     2.75, n=48, p=0.000107
+           NPM1:            CPS1     0.32 +/-     0.86  -->      0.02 +/-     0.03, n=48, p=0.000110
+           NPM1:            MEST    59.36 +/-    62.55  -->     14.54 +/-    17.51, n=48, p=0.000114
+           NPM1:      SNORD116-4     5.96 +/-     4.66  -->      1.80 +/-     2.28, n=48, p=0.000114
+           NPM1:     SNORD116-28     3.08 +/-     2.39  -->      0.94 +/-     1.23, n=48, p=0.000133
+           NPM1:           PRRT4     8.24 +/-    13.36  -->      1.14 +/-     1.74, n=48, p=0.000139
+           NPM1:             IPW     4.51 +/-     3.47  -->      1.42 +/-     1.78, n=48, p=0.000140
+           NPM1:           CCND2    66.82 +/-    48.72  -->     29.00 +/-    21.08, n=48, p=0.000145
+           NPM1:        SLC38A10    29.94 +/-    11.25  -->     43.48 +/-    12.44, n=48, p=0.000148
+           NPM1:           CMTM8     1.69 +/-     2.15  -->      0.44 +/-     0.57, n=48, p=0.000153
+           NPM1:          ZNF721     8.42 +/-     3.88  -->      4.25 +/-     3.08, n=48, p=0.000154
+    DNMT3A+NPM1:           HOXB4    10.56 +/-    14.36  -->     35.21 +/-    11.74, n=23, p=0.000158
+           NPM1:       C20orf200     1.32 +/-     4.08  -->      5.95 +/-     7.51, n=48, p=0.000167
+           NPM1:           RADIL     0.71 +/-     0.56  -->      0.30 +/-     0.17, n=48, p=0.000174
+           NPM1:        C12orf75    15.69 +/-    12.29  -->      6.01 +/-     6.61, n=48, p=0.000183
+           NPM1:         C18orf1     6.40 +/-     4.92  -->      2.24 +/-     1.56, n=48, p=0.000191
+       FLT3-ITD:           CDRT1     0.07 +/-     0.23  -->      0.34 +/-     0.46, n=37, p=0.000191
+           NPM1:             REN     0.07 +/-     0.41  -->      0.57 +/-     1.12, n=48, p=0.000193
+           NPM1:        SERPINF1    17.76 +/-    24.49  -->      4.37 +/-     2.28, n=48, p=0.000206
+           NPM1:          SHANK3    22.69 +/-    27.76  -->      4.48 +/-     6.53, n=48, p=0.000236
+           NPM1:          UBXN2B    11.82 +/-     4.27  -->     16.37 +/-     4.63, n=48, p=0.000241
+           NPM1:       LOC400931     1.35 +/-     1.78  -->      3.65 +/-     3.22, n=48, p=0.000246
+           NPM1:          EEF1A2     0.97 +/-     5.72  -->      3.07 +/-     7.95, n=48, p=0.000261
+           NPM1:           SIDT1     4.28 +/-     2.91  -->      1.89 +/-     1.82, n=48, p=0.000268
+           NPM1:         C1orf21     3.71 +/-     3.09  -->      1.16 +/-     1.68, n=48, p=0.000277
+           NPM1:         ST8SIA6     6.33 +/-     9.07  -->     18.49 +/-    16.43, n=48, p=0.000286
+           NPM1:             JUP    64.37 +/-    46.57  -->     24.03 +/-    22.97, n=48, p=0.000292
+           TP53:         B3GALT5     0.00 +/-     0.03  -->      0.38 +/-     0.93, n=14, p=0.000293
+    DNMT3A+NPM1:           HOXB2     8.56 +/-    10.13  -->     26.73 +/-    11.73, n=23, p=0.000300
+           NPM1:           KIF3B     6.25 +/-     1.49  -->      8.05 +/-     1.95, n=48, p=0.000304
+           NPM1:       SNORD109A     1.90 +/-     1.72  -->      0.44 +/-     0.72, n=48, p=0.000307
+           NPM1:            ESAM     7.64 +/-     8.84  -->      1.85 +/-     2.58, n=48, p=0.000308
+           NPM1:          CT45A4     0.01 +/-     0.05  -->      0.08 +/-     0.15, n=48, p=0.000324
+           NPM1:             ACR     0.56 +/-     0.73  -->      0.09 +/-     0.13, n=48, p=0.000352
+           NPM1:           TRIB2     5.06 +/-     6.75  -->      1.63 +/-     2.02, n=48, p=0.000364
+           NPM1:           SAGE1     0.49 +/-     2.46  -->      3.27 +/-     5.03, n=48, p=0.000364
+  NPM1+FLT3-ITD:             REN     0.09 +/-     0.40  -->      1.22 +/-     1.50, n=19, p=0.000381
+           NPM1:         SLC24A5     0.74 +/-     1.02  -->      0.11 +/-     0.27, n=48, p=0.000382
+           NPM1:          PLXND1    66.11 +/-    25.79  -->     38.89 +/-    19.58, n=48, p=0.000383
+           NPM1:         FAM131A     2.03 +/-     0.84  -->      2.94 +/-     0.72, n=48, p=0.000392
+           NPM1:            MREG     2.22 +/-     2.37  -->      0.53 +/-     0.61, n=48, p=0.000392
+    DNMT3A+NPM1:           FGF10     0.59 +/-     2.85  -->      2.82 +/-     3.25, n=23, p=0.000406
+           NPM1:           MEF2A    26.98 +/-    12.08  -->     15.74 +/-     6.09, n=48, p=0.000417
+    DNMT3A+NPM1:           HOXB6     3.25 +/-     5.79  -->     14.20 +/-     8.87, n=23, p=0.000417
+           NPM1:          CT45A2     0.02 +/-     0.13  -->      0.10 +/-     0.17, n=48, p=0.000449
+           NPM1:             AXL     0.99 +/-     1.25  -->      0.23 +/-     0.32, n=48, p=0.000463
+  NPM1+FLT3-ITD:          FAM47E     0.44 +/-     1.14  -->      3.41 +/-     3.43, n=19, p=0.000469
+           NPM1:           FMNL3     6.85 +/-     4.64  -->      3.23 +/-     1.65, n=48, p=0.000473
+           NPM1:         SLCO5A1     2.29 +/-     3.67  -->      0.11 +/-     0.25, n=48, p=0.000473
+           NPM1:         ABCA11P     3.47 +/-     1.84  -->      1.56 +/-     1.55, n=48, p=0.000482
+           NPM1:         C8orf56     1.03 +/-     1.28  -->      0.10 +/-     0.15, n=48, p=0.000495
+           NPM1:           STK24    23.10 +/-     8.19  -->     15.70 +/-     5.36, n=48, p=0.000514
+           TP53:          ZNF560     0.09 +/-     0.42  -->      3.03 +/-     2.67, n=14, p=0.000521
+           NPM1:           SCN1B     1.63 +/-     2.42  -->      0.45 +/-     0.43, n=48, p=0.000524
+       FLT3-ITD:          FAM64A     2.06 +/-     2.21  -->      0.49 +/-     0.78, n=37, p=0.000537
+           NPM1:           PCBD1    18.79 +/-     9.75  -->     29.77 +/-    12.20, n=48, p=0.000570
+           NPM1:           SPRY1     9.79 +/-    11.57  -->      2.65 +/-     4.98, n=48, p=0.000582
+           NPM1:           USP13     4.21 +/-     2.06  -->      2.42 +/-     0.99, n=48, p=0.000645
+           NPM1:            EMR1    10.79 +/-    15.07  -->     29.00 +/-    26.12, n=48, p=0.000658
+           NPM1:           PAQR8     6.15 +/-     3.70  -->     11.59 +/-     6.09, n=48, p=0.000672
+    DNMT3A+NPM1:           LRRC2     0.30 +/-     0.51  -->      0.02 +/-     0.02, n=23, p=0.000691
+    DNMT3A+NPM1:           HOXB3    17.63 +/-    26.18  -->     61.15 +/-    22.92, n=23, p=0.000705
+           NPM1:            KRT1     1.07 +/-     2.16  -->      0.20 +/-     0.57, n=48, p=0.000715
+    FLT3+DNMT3A:           LCE1B     0.00 +/-     0.01  -->      0.01 +/-     0.01, n= 6, p=0.000724
+    DNMT3A+NPM1:           HOXB5     3.64 +/-     5.74  -->     16.33 +/-    13.51, n=23, p=0.000746
+           NPM1:          SLC2A4     0.61 +/-     0.74  -->      0.17 +/-     0.34, n=48, p=0.000760
+           NPM1:          TBXAS1    39.73 +/-    21.17  -->     68.93 +/-    30.50, n=48, p=0.000776
+    DNMT3A+NPM1:            PBX3    24.67 +/-    26.81  -->     65.64 +/-    20.43, n=23, p=0.000829
+           NPM1:           EFNB1     4.83 +/-     3.75  -->      1.97 +/-     1.37, n=48, p=0.000843
+          RUNX1:          OPALIN     0.48 +/-     1.38  -->     10.20 +/-    10.74, n=16, p=0.000871
+           TP53:         GALNT13     0.02 +/-     0.21  -->      0.06 +/-     0.10, n=14, p=0.000933
+           NPM1:         EPB41L1     0.20 +/-     0.26  -->      0.06 +/-     0.08, n=48, p=0.000934
+           NPM1:           MYEF2     2.92 +/-     3.81  -->      0.47 +/-     1.12, n=48, p=0.000973
+           NPM1:           AKAP2    19.68 +/-    12.11  -->      8.47 +/-     5.95, n=48, p=0.000993
+           NPM1:     PALM2-AKAP2    15.81 +/-     9.72  -->      6.81 +/-     4.78, n=48, p=0.000993
+           NPM1:            TLX1     0.02 +/-     0.20  -->      0.03 +/-     0.08, n=48, p=0.001016
+           NPM1:           SNURF    30.51 +/-    18.03  -->     12.85 +/-    12.82, n=48, p=0.001034
+           NPM1:            FLT4     3.40 +/-     7.76  -->      0.32 +/-     0.46, n=48, p=0.001045
+           NPM1:          ENDOD1     7.35 +/-     5.28  -->      3.16 +/-     1.97, n=48, p=0.001055
+          RUNX1:          SETBP1     1.51 +/-     4.15  -->     12.06 +/-     8.53, n=16, p=0.001072
+          RUNX1:          PPP3CC    12.02 +/-     4.12  -->     22.36 +/-     4.67, n=16, p=0.001072
+           NPM1:          ZNF626     2.26 +/-     2.38  -->      0.56 +/-     0.81, n=48, p=0.001077
+           NPM1:          CHMP1B    43.74 +/-     9.77  -->     56.04 +/-    13.67, n=48, p=0.001077
+           NPM1:    LOC100188949     6.10 +/-     6.17  -->      1.77 +/-     1.10, n=48, p=0.001077
+           NPM1:           AIFM2     1.10 +/-     0.79  -->      2.21 +/-     1.23, n=48, p=0.001099
+           NPM1:          STK32B     7.82 +/-     9.01  -->      1.96 +/-     1.98, n=48, p=0.001099
+  NPM1+FLT3-ITD:           WNT7B     0.30 +/-     0.91  -->      1.38 +/-     1.39, n=19, p=0.001124
+           NPM1:           PTGFR     0.23 +/-     0.83  -->      2.01 +/-     5.90, n=48, p=0.001145
+           NPM1:           EIF1B    41.01 +/-    11.45  -->     66.79 +/-    37.01, n=48, p=0.001145
+    DNMT3A+NPM1:          POU6F1     2.81 +/-     1.73  -->      0.90 +/-     0.53, n=23, p=0.001178
+           NPM1:         C6orf47     7.81 +/-     1.88  -->     10.12 +/-     2.49, n=48, p=0.001193
+           NPM1:          ATP10A     7.82 +/-     7.43  -->      2.02 +/-     3.23, n=48, p=0.001242
+           NPM1:            IQCE     2.87 +/-     1.46  -->      4.40 +/-     1.27, n=48, p=0.001242
+           NPM1:            PAR1     0.23 +/-     0.22  -->      0.06 +/-     0.14, n=48, p=0.001257
+           NPM1:          SYNGR1    19.28 +/-    10.53  -->     10.15 +/-     4.80, n=48, p=0.001293
+           NPM1:           DMXL2    22.02 +/-    20.63  -->     50.92 +/-    33.03, n=48, p=0.001320
+           NPM1:           PMP22     3.57 +/-     6.89  -->      0.80 +/-     1.88, n=48, p=0.001460
+           NPM1:          CLSTN1    40.45 +/-    14.99  -->     26.92 +/-     8.24, n=48, p=0.001461
+           NPM1:          PAR-SN     7.06 +/-     4.40  -->      2.93 +/-     3.06, n=48, p=0.001490
+           NPM1:          PMEPA1     1.17 +/-     1.14  -->      0.36 +/-     0.32, n=48, p=0.001521
+           TP53:           IGSF5     0.00 +/-     0.01  -->      0.09 +/-     0.23, n=14, p=0.001529
+           NPM1:           ITGA6    23.74 +/-    16.79  -->     10.30 +/-     7.57, n=48, p=0.001552
+           NPM1:           AAGAB    11.56 +/-     2.93  -->     15.21 +/-     3.51, n=48, p=0.001584
+           NPM1:          ADAM17    19.33 +/-     7.33  -->     27.92 +/-    11.92, n=48, p=0.001584
+           NPM1:           GPSM2    18.23 +/-     8.52  -->     10.48 +/-     4.67, n=48, p=0.001584
+           NPM1:           APBA1     1.25 +/-     2.30  -->      0.10 +/-     0.22, n=48, p=0.001594
+           NPM1:          C9orf6     9.95 +/-     2.27  -->     12.39 +/-     2.71, n=48, p=0.001616
+           NPM1:          IFITM1    84.92 +/-    83.09  -->     27.47 +/-    20.29, n=48, p=0.001682
+           NPM1:           PTPRM     4.54 +/-     7.03  -->      0.58 +/-     1.26, n=48, p=0.001682
+       FLT3-ITD:           LRRC6     1.82 +/-     0.99  -->      2.89 +/-     0.83, n=37, p=0.001773
+           NPM1:            CCL1     0.63 +/-     1.77  -->      9.67 +/-    26.78, n=48, p=0.001896
+  NPM1+FLT3-ITD:            PBX3    24.56 +/-    24.78  -->     75.21 +/-    26.33, n=19, p=0.001972
+           NPM1:          ZNF608     4.57 +/-     4.19  -->      1.23 +/-     1.44, n=48, p=0.001976
+           TP53:          TTTY13     0.00 +/-     0.01  -->      0.03 +/-     0.05, n=14, p=0.002048
+           TP53:          FAM89A     5.28 +/-     5.56  -->     22.46 +/-    13.53, n=14, p=0.002061
+           NPM1:            SMC4    39.72 +/-    18.82  -->     77.82 +/-    44.67, n=48, p=0.002098
+    DNMT3A+NPM1:           HOXB7     1.27 +/-     3.80  -->      6.27 +/-     9.91, n=23, p=0.002133
+           NPM1:         BCL2L14     0.51 +/-     2.18  -->      0.02 +/-     0.04, n=48, p=0.002166
+           NPM1:          ZCCHC2     6.40 +/-     2.32  -->      8.96 +/-     2.73, n=48, p=0.002228
+           NPM1:           LPAR6    12.88 +/-    18.25  -->      5.01 +/-     7.39, n=48, p=0.002273
+           IDH2:           PRAME    11.87 +/-    24.88  -->      0.01 +/-     0.02, n=17, p=0.002280
+  NPM1+FLT3-ITD:         CYSLTR2     3.19 +/-     4.05  -->     16.94 +/-    14.00, n=19, p=0.002342
+  NPM1+FLT3-ITD:         PLA2G4A     8.65 +/-     5.23  -->     19.04 +/-     5.60, n=19, p=0.002410
+           NPM1:             SHD     5.21 +/-    10.72  -->      1.10 +/-     3.15, n=48, p=0.002454
+         MT-CYB:        KRTAP3-1     0.00 +/-     0.00  -->      0.02 +/-     0.04, n= 5, p=0.002473
+         MT-CYB:            PER4     0.00 +/-     0.00  -->      0.01 +/-     0.03, n= 5, p=0.002473
+         MT-CYB:         RBMY2EP     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+         MT-CYB:        PRAMEF12     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          RAD21:           OR5H1     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          RAD21:          OR4C16     0.00 +/-     0.00  -->      0.03 +/-     0.05, n= 5, p=0.002473
+          RAD21:           SPRR4     0.00 +/-     0.00  -->      0.02 +/-     0.03, n= 5, p=0.002473
+          RAD21:       LOC340094     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+          RAD21:          SPRR1B     0.00 +/-     0.00  -->      0.02 +/-     0.04, n= 5, p=0.002473
+          RAD21:           PLUNC     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          RAD21:           POTED     0.00 +/-     0.00  -->      0.02 +/-     0.03, n= 5, p=0.002473
+          RAD21:       C10orf120     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          RAD21:            SSX3     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+          RAD21:          PCDHB1     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+          RAD21:          OR4K14     0.00 +/-     0.00  -->      0.01 +/-     0.03, n= 5, p=0.002473
+          RAD21:            NPVF     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+          RAD21:           AGTR2     0.00 +/-     0.00  -->      0.00 +/-     0.00, n= 5, p=0.002473
+          RAD21:        PRAMEF10     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+          RAD21:           LUZP4     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+           PHF6:         RBMY2FP     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          STAG2:            ADH7     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+          FAM5C:           OR4F4     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+          FAM5C:           KRT84     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+    PTPN11+NPM1:         ZNF705D     0.00 +/-     0.00  -->      0.00 +/-     0.00, n= 5, p=0.002473
+   WT1+FLT3-ITD:            ADH7     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+   WT1+FLT3-ITD:           SMR3A     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+     IDH2+RUNX1:        C10orf96     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+     IDH2+RUNX1:           KRT75     0.00 +/-     0.00  -->      0.00 +/-     0.00, n= 5, p=0.002473
+     IDH2+RUNX1:           OR5L1     0.00 +/-     0.00  -->      0.00 +/-     0.00, n= 5, p=0.002473
+     IDH2+RUNX1:          OR6C65     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 5, p=0.002473
+     IDH2+RUNX1:         RBMY2FP     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+     IDH2+RUNX1:     SNORD115-30     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+      NRAS+NPM1:           OR5H1     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+      NRAS+NPM1:       C10orf120     0.00 +/-     0.00  -->      0.01 +/-     0.01, n= 5, p=0.002473
+      NRAS+NPM1:           OR4C3     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+      NRAS+NPM1:           OR8B2     0.00 +/-     0.00  -->      0.00 +/-     0.01, n= 5, p=0.002473
+           NPM1:             MN1    11.82 +/-    16.80  -->      1.37 +/-     2.64, n=48, p=0.002774
+           NPM1:          RIMKLB    12.07 +/-     7.87  -->      6.06 +/-     3.89, n=48, p=0.002802
+       FLT3-ITD:             XPC    16.35 +/-     3.89  -->     21.74 +/-     4.68, n=37, p=0.002805
+           NPM1:          SLC9A6     6.81 +/-     2.00  -->      8.66 +/-     1.78, n=48, p=0.002944
+           NPM1:           CD320     6.98 +/-     4.78  -->      3.11 +/-     2.36, n=48, p=0.002944
+           TP53:        EIF4EBP3    21.49 +/-     6.36  -->     10.70 +/-     2.31, n=14, p=0.002956
+           NPM1:          MYBPC2     0.13 +/-     0.27  -->      0.03 +/-     0.04, n=48, p=0.002957
+           NPM1:            GLI3     0.33 +/-     0.86  -->      0.03 +/-     0.05, n=48, p=0.002966
+           NPM1:           SNRPN    19.52 +/-    11.31  -->      8.68 +/-     8.63, n=48, p=0.003063
+           NPM1:          ARPP21     1.78 +/-     3.44  -->      0.05 +/-     0.16, n=48, p=0.003072
+          RUNX1:            TLL2     0.07 +/-     0.17  -->      1.55 +/-     1.90, n=16, p=0.003113
+           NPM1:           FNBP1    45.17 +/-    14.69  -->     58.54 +/-    13.18, n=48, p=0.003187
+           NPM1:           HEMGN    26.04 +/-    31.27  -->      6.16 +/-    11.12, n=48, p=0.003251
+           NPM1:           HIPK2    11.93 +/-     6.36  -->     21.52 +/-    11.30, n=48, p=0.003316
+           NPM1:         TSPAN13    14.90 +/-    11.76  -->      5.00 +/-     6.00, n=48, p=0.003316
+           NPM1:        FAM171A1     5.89 +/-    13.03  -->      0.72 +/-     2.50, n=48, p=0.003348
+       FLT3-ITD:           LYRM1     7.92 +/-     3.49  -->     15.80 +/-     8.58, n=37, p=0.003409
+           NPM1:            FGD5     2.21 +/-     4.97  -->      0.26 +/-     1.30, n=48, p=0.003448
+           NPM1:            PLEK   141.81 +/-    50.63  -->    202.76 +/-    68.03, n=48, p=0.003449
+           NPM1:          NUDT18     5.17 +/-     1.98  -->      7.37 +/-     2.20, n=48, p=0.003449
+           NPM1:           ANXA1   217.22 +/-   135.54  -->    357.24 +/-   138.24, n=48, p=0.003518
+           NPM1:           ADRB2    11.94 +/-    10.06  -->     24.58 +/-    15.58, n=48, p=0.003518
+           IDH2:           ACCN3     1.53 +/-     2.41  -->      4.71 +/-     2.84, n=17, p=0.003542
+           NPM1:            TPM4    95.51 +/-    61.72  -->     54.94 +/-    38.84, n=48, p=0.003588
+    DNMT3A+NPM1:    LOC100271722     4.08 +/-     5.05  -->     11.67 +/-     5.91, n=23, p=0.003671
+           NPM1:        CACNA2D2     2.71 +/-     7.25  -->      0.49 +/-     0.50, n=48, p=0.003769
+           TP53:           ZMAT2    38.86 +/-    12.15  -->     20.86 +/-     3.66, n=14, p=0.003833
+           NPM1:          COL9A3     0.60 +/-     0.63  -->      1.97 +/-     2.76, n=48, p=0.003882
+           TP53:           KDM3B    35.25 +/-     6.72  -->     19.26 +/-     4.53, n=14, p=0.003959
+           TP53:             VIP     0.06 +/-     0.17  -->      1.28 +/-     2.21, n=14, p=0.003984
+           NPM1:            INSC     0.08 +/-     0.11  -->      0.02 +/-     0.03, n=48, p=0.004010
+           NPM1:            RINL     5.09 +/-     2.68  -->      7.55 +/-     2.42, n=48, p=0.004038
+           NPM1:        C10orf47     5.09 +/-     3.37  -->      2.20 +/-     1.51, n=48, p=0.004284
+    DNMT3A+NPM1:           HOXB9     2.45 +/-    11.87  -->     16.44 +/-    44.19, n=23, p=0.004408
+           NPM1:          SUCLG2     7.44 +/-     5.86  -->     13.95 +/-     6.22, n=48, p=0.004455
+           NPM1:           LPHN1     7.11 +/-     6.35  -->      3.38 +/-     2.23, n=48, p=0.004543
+    DNMT3A+NPM1:           HOXA5    19.79 +/-    28.36  -->     57.66 +/-    19.60, n=23, p=0.004606
+    DNMT3A+NPM1:            NCR2     1.47 +/-     9.61  -->      6.59 +/-    20.37, n=23, p=0.004699
+           NPM1:        ARHGAP22     3.40 +/-     3.71  -->      8.68 +/-     6.55, n=48, p=0.004818
+           NPM1:           SKAP2    31.02 +/-    18.47  -->     50.43 +/-    17.23, n=48, p=0.004818
+           NPM1:         RTN4RL2     1.21 +/-     0.90  -->      0.53 +/-     0.34, n=48, p=0.004865
+    DNMT3A+NPM1:           HOXA7    10.32 +/-    12.28  -->     29.38 +/-    11.43, n=23, p=0.004905
+    DNMT3A+NPM1:       HOXA11-AS     1.02 +/-     3.93  -->      2.53 +/-     2.57, n=23, p=0.004997
+           NPM1:         SLC35B4     7.33 +/-     2.25  -->     10.54 +/-     3.71, n=48, p=0.005010
+  NPM1+FLT3-ITD:         CARHSP1    14.35 +/-     4.12  -->      9.15 +/-     1.75, n=19, p=0.005032
+          CEBPA:          UGT2B7     0.01 +/-     0.10  -->      0.02 +/-     0.02, n=13, p=0.005259
+           NPM1:           LYPD6     0.05 +/-     0.17  -->      0.20 +/-     0.26, n=48, p=0.005343
+           NPM1:         ADAMTS4     0.44 +/-     1.83  -->      0.06 +/-     0.06, n=48, p=0.005417
+           NPM1:          IZUMO1     0.13 +/-     0.21  -->      0.04 +/-     0.07, n=48, p=0.005504
+           NPM1:        FLJ42875     0.88 +/-     2.28  -->      3.53 +/-     3.62, n=48, p=0.005519
+           NPM1:          TRIM46     4.50 +/-     3.83  -->      7.70 +/-     2.94, n=48, p=0.005524
+           NPM1:           CARD9    16.76 +/-    11.43  -->     27.97 +/-    10.83, n=48, p=0.005524
+    DNMT3A+NPM1:         PLA2G4A     8.62 +/-     5.38  -->     17.38 +/-     5.81, n=23, p=0.005555
+           NPM1:           GNG11     7.16 +/-    12.84  -->      1.02 +/-     2.27, n=48, p=0.005561
+           NPM1:        CACNA2D4     6.90 +/-    10.50  -->     14.73 +/-    12.12, n=48, p=0.005632
+    DNMT3A+NPM1:           HOXA6    11.54 +/-    15.59  -->     36.24 +/-    16.14, n=23, p=0.005633
+     IDH2+RUNX1:           XAGE3     0.00 +/-     0.02  -->      0.03 +/-     0.05, n= 5, p=0.005648
+    DNMT3A+NPM1:           PRRT4     7.17 +/-    12.48  -->      0.55 +/-     1.06, n=23, p=0.005699
+DNMT3A+FLT3-ITD:           FGF10     0.66 +/-     2.86  -->      3.86 +/-     3.33, n=12, p=0.005760
+           NPM1:           MCF2L     1.09 +/-     1.26  -->      0.30 +/-     0.33, n=48, p=0.005856
+           NPM1:         ADAMTS5     0.11 +/-     0.36  -->      0.44 +/-     0.62, n=48, p=0.005860
+           NPM1:            TMIE     0.52 +/-     0.67  -->      0.15 +/-     0.18, n=48, p=0.005904
+       FLT3-ITD:            CTNS     6.66 +/-     1.84  -->      9.11 +/-     2.19, n=37, p=0.005949
+           NPM1:          FAM81B     0.42 +/-     0.35  -->      1.06 +/-     0.82, n=48, p=0.006088
+          RUNX1:            DNTT    32.15 +/-   110.37  -->    316.50 +/-   269.98, n=16, p=0.006130
+           NPM1:           ABHD2    32.87 +/-    12.35  -->     48.70 +/-    17.99, n=48, p=0.006208
+           TP53:             CNP    18.04 +/-     3.89  -->     11.98 +/-     2.49, n=14, p=0.006210
+           NPM1:           MMP11     0.79 +/-     0.98  -->      0.20 +/-     0.18, n=48, p=0.006268
+           NPM1:       C10orf114     2.52 +/-     4.78  -->      5.41 +/-     4.64, n=48, p=0.006420
+           NPM1:           ITM2A   107.93 +/-   117.36  -->     25.56 +/-    27.18, n=48, p=0.006453
+  NPM1+FLT3-ITD:          PRSS54     0.20 +/-     0.21  -->      0.74 +/-     0.41, n=19, p=0.006585
+           NPM1:         SLCO1B3     0.01 +/-     0.05  -->      0.06 +/-     0.20, n=48, p=0.006690
+           NPM1:         TMEM105     0.72 +/-     1.78  -->      2.27 +/-     3.21, n=48, p=0.006751
+           NPM1:            BCAN     0.17 +/-     0.89  -->      0.17 +/-     0.14, n=48, p=0.006785
+          RUNX1:         C1orf21     2.55 +/-     2.64  -->      7.60 +/-     2.40, n=16, p=0.007429
+           IDH1:           ROGDI    14.82 +/-    10.79  -->      3.02 +/-     2.28, n=16, p=0.007429
+           NPM1:           FRMD6     1.00 +/-     1.28  -->      0.20 +/-     0.34, n=48, p=0.007461
+           NPM1:           CLCC1    15.56 +/-     5.79  -->     10.17 +/-     3.47, n=48, p=0.007534
+           NPM1:            PBX1     1.59 +/-     5.36  -->      0.19 +/-     0.74, n=48, p=0.007620
+    DNMT3A+NPM1:          NKX2-3     3.00 +/-     5.38  -->     10.75 +/-     7.46, n=23, p=0.007728
+    DNMT3A+NPM1:           HOXA3     5.99 +/-     7.66  -->     17.34 +/-     6.48, n=23, p=0.007744
+           NPM1:            HNMT     2.88 +/-     5.13  -->      8.07 +/-     7.59, n=48, p=0.007831
+           NPM1:          CT45A6     0.02 +/-     0.16  -->      0.09 +/-     0.22, n=48, p=0.007872
+           TP53:       C20orf185     0.00 +/-     0.02  -->      0.10 +/-     0.18, n=14, p=0.007974
+           NPM1:        TCTEX1D1    10.73 +/-    14.19  -->      2.53 +/-     3.64, n=48, p=0.007984
+           NPM1:           RIPK3     8.33 +/-     3.97  -->     12.27 +/-     3.76, n=48, p=0.007984
+           NPM1:          PRDM16     1.81 +/-     3.29  -->      5.41 +/-     5.14, n=48, p=0.008114
+           NPM1:            FSD1     0.31 +/-     0.38  -->      0.07 +/-     0.09, n=48, p=0.008117
+           NPM1:          H2AFY2     3.08 +/-     4.34  -->      8.24 +/-     5.82, n=48, p=0.008139
+           NPM1:           ABCB1     5.83 +/-     8.37  -->      1.07 +/-     1.12, n=48, p=0.008139
+           TP53:         C5orf15    32.19 +/-    10.14  -->     16.09 +/-     4.06, n=14, p=0.008269
+          U2AF1:           FGF19     0.00 +/-     0.00  -->      0.01 +/-     0.02, n= 7, p=0.008407
+    DNMT3A+NPM1:           HOXB1     0.03 +/-     0.07  -->      0.23 +/-     0.31, n=23, p=0.008466
+           NPM1:            CTSE     1.97 +/-     5.87  -->      0.32 +/-     0.51, n=48, p=0.008620
+           NPM1:         C1QTNF4    44.60 +/-    69.96  -->      7.82 +/-    10.26, n=48, p=0.008623
+           NPM1:         MACROD2     0.68 +/-     1.63  -->      0.10 +/-     0.09, n=48, p=0.008790
+           NPM1:           SESN3    13.65 +/-     8.91  -->      6.50 +/-     6.75, n=48, p=0.008790
+           NPM1:             ASL     7.88 +/-     3.97  -->     12.44 +/-     4.94, n=48, p=0.008961
+           TP53:           CNOT8    46.83 +/-    12.15  -->     25.65 +/-     6.51, n=14, p=0.009092
+           NPM1:           AFAP1     0.72 +/-     0.88  -->      0.21 +/-     0.26, n=48, p=0.009135
+           NPM1:         RASGRP3     7.82 +/-     9.11  -->     19.50 +/-    15.74, n=48, p=0.009135
+           NPM1:          ANGPT4     0.13 +/-     0.20  -->      0.04 +/-     0.06, n=48, p=0.009233
+  NPM1+FLT3-ITD:          TRIM16     1.76 +/-     2.29  -->      6.20 +/-     4.82, n=19, p=0.009272
+           TP53:             IL7     0.86 +/-     2.15  -->      7.26 +/-     6.39, n=14, p=0.009682
+    DNMT3A+NPM1:          TMIGD2     9.35 +/-     9.91  -->      0.76 +/-     0.83, n=23, p=0.009737
+  NPM1+FLT3-ITD:           PDGFD     2.14 +/-     2.50  -->      7.60 +/-     3.93, n=19, p=0.009797
+           NPM1:          CAMK2G    22.41 +/-     8.02  -->     16.02 +/-     4.47, n=48, p=0.009863
+
+Significant effects:
+                NPM1 296
+         DNMT3A+NPM1 26
+                TP53 16
+               RAD21 15
+       NPM1+FLT3-ITD 12
+            FLT3-ITD 11
+          IDH2+RUNX1 7
+              MT-CYB 6
+               RUNX1 6
+           NRAS+NPM1 4
+        WT1+FLT3-ITD 2
+                IDH2 2
+               FAM5C 2
+     DNMT3A+FLT3-ITD 1
+               CEBPA 1
+           FLT3+NPM1 1
+         PTPN11+NPM1 1
+         FLT3+DNMT3A 1
+               STAG2 1
+                 TTN 1
+               SMC1A 1
+                IDH1 1
+                KRAS 1
+               U2AF1 1
+                PHF6 1
