@@ -8,7 +8,9 @@ PROTEINS_OF_INTEREST = None
 #PROTEINS_OF_INTEREST = ['CEBPA', 'CEBPB', 'CEBPD', 'CEBPE', 'CEBPG', 'CEBPZ' ]
 
 USE_CORRECTION = True
-RNA_PATH = '../data/rna-gene-expression'
+USE_SNAP_ALIGNED_DATA = False
+SNAP_ALIGNED_RNA_PATH = '../data/rna-gene-expression'
+TCGA_SUMMARY_RNA_PATH = '../data/tcga-laml.rnaseq.179_v1.0_gaf2.0_rpkm_matrix.txt.tcgaID.txt'
 
 ########################################################################
 
@@ -41,8 +43,8 @@ class Patients:
     def __init__(self):
         self.map = {}
 
-        self.readMutationData()
-        self.readExpressionData()
+        self.readMutationData(self)
+        self.readExpressionData(self)
 
         # Print some statistics
         has_expressions = len([p for p in self.all() if p.getExpressionData()])
@@ -69,21 +71,71 @@ class Patients:
 
 
     # Populates each patient record with their expression ExpressionData 
-    def readExpressionData(self):
-        if not os.path.exists(RNA_PATH):
-            sys.stderr.write("Error: RNA data path '%s' does not exist" % (RNA_PATH))
+    def readExpressionData(self, patients):
+        if USE_SNAP_ALIGNED_DATA:
+            self.readSnapAlignedData(patients)
+        else:
+            self.readTcgaSummaryData(patients)
+
+    def readTcgaSummaryData(self, patients):
+        if not os.path.exists(TCGA_SUMMARY_RNA_PATH):
+            sys.stderr.write("Error: TCGA summary RNA data path '%s' does not exist" % (TCGA_SUMMARY_RNA_PATH))
             sys.exit(1)
 
-        if not os.path.isdir(RNA_PATH):
-            sys.stderr.write("Error: RNA data path '%s' is not a directory" % (RNA_PATH))
+        with open(TCGA_SUMMARY_RNA_PATH, 'r') as rnaMatrix:
+            patientsInFile = []
+
+            # Read the first (header) line and construct an array of the patient records we'll insert
+            # each expression record into
+            header = rnaMatrix.readline()
+            sampleIds = header.split()
+
+            seenFirst = False
+            for sampleId in sampleIds:
+                if not seenFirst:
+                    if sampleId == 'GeneID':
+                        seenFirst = True
+                        continue
+                    else:
+                        sys.stderr.write("TCGA RNA summary data file doesn't have 'GeneID' where expected")
+                        sys.exit(1)
+
+                patientId = patientIdFromSampleId(sampleId)
+                patient = patients.get(patientId)
+                patientsInFile.append(patient)
+
+            # Now read the data and insert
+            for line in rnaMatrix:
+                cols = line.split()
+                geneName = cols[0].split("|")[0]
+                expressions = cols[1:]
+
+                if geneName == '?':
+                    continue
+
+                if len(expressions) != len(patientsInFile):
+                    sys.stderr.write("Whoa. Header line doesn't seem to be the same length as data lines.")
+                    sys.exit(1)
+
+                for patient, expression in zip(patientsInFile, expressions):
+                    patient.getExpressionData().set(geneName, expression)
+
+
+    def readSnapAlignedExpressionData(self, patients):
+        if not os.path.exists(SNAP_ALIGNED_RNA_PATH):
+            sys.stderr.write("Error: RNA data path '%s' does not exist" % (SNAP_ALIGNED_RNA_PATH))
             sys.exit(1)
 
-        globList = glob.glob(os.path.join(RNA_PATH, "*"))
+        if not os.path.isdir(SNAP_ALIGNED_RNA_PATH):
+            sys.stderr.write("Error: RNA data path '%s' is not a directory" % (SNAP_ALIGNED_RNA_PATH))
+            sys.exit(1)
+
+        globList = glob.glob(os.path.join(SNAP_ALIGNED_RNA_PATH, "*"))
 
         if len(globList) == 0:
-            sys.stderr.write("Error: RNA directory %s is empty" % (RNA_PATH))
+            sys.stderr.write("Error: RNA directory %s is empty" % (SNAP_ALIGNED_RNA_PATH))
 
-        sys.stderr.write("Reading expression data from %s\n" % (RNA_PATH))
+        sys.stderr.write("Reading expression data from %s\n" % (SNAP_ALIGNED_RNA_PATH))
 
         for resultDir in globList:
             studyId = os.path.basename(resultDir)
@@ -162,7 +214,7 @@ class Patients:
 
         return True
 
-    def readMutationData(self):
+    def readMutationData(self, patients):
         sys.stderr.write("Reading mutation data\n")
 
         with open('../data/tcga-laml-genes-frankannotations.csv', 'r') as mutationsCSV:
@@ -195,7 +247,7 @@ class Patients:
 class PatientData:
     def __init__(self):
         self.mutations = Mutations()
-        self.expressionData = None
+        self.expressionData = ExpressionData()
 
     def isValid(self):
         return self.getMutations().hasData() and self.getExpressionData()
@@ -233,7 +285,7 @@ class ExpressionData:
         return self.proteins[proteinName]
 
     def set(self, proteinName, level):
-        self.proteins[proteinName] = int(level)
+        self.proteins[proteinName] = float(level)
 
     def correct(self, scaleFactor):
         for proteinName in self.proteins:
